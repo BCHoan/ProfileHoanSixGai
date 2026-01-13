@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi-VN" class="dark" data-title-loader="𝑪𝒐𝒏𝒈𝑯𝒐𝒂𝒏">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CongHoan - Projects</title>
+  <meta property="og:title" content="Bùi Công Hoan | Projects" />
+  <meta name="description" content="Các dự án tiêu biểu của Bùi Công Hoan" />
+  <link rel="shortcut icon" href="https://i.ibb.co/rGMn65d/boss.webp" type="image/x-icon" />
+  <meta content="#FCFCFD" name="theme-color" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css?v=4.0" />
+  <link rel="stylesheet" href="./assets/css/fuiToast.min.css" />
+  <link rel="stylesheet" href="./assets/css/fancybox.css" />
+  <link rel="stylesheet" href="./assets/css/index.css?v=4.0" />
+</head>
+<body>
+  <div class="flex justify-center bg-background">
+    <div class="pointer-events-none absolute start-0 top-0 z-0 h-1/2 w-full opacity-40" style="background-image:linear-gradient(#659EB966, transparent)"></div>
+
+    <main class="z-10 flex min-h-screen w-screen max-w-[60rem] flex-col items-center px-4 text-[0.92rem] leading-relaxed sm:px-7 lg:px-10">
+      <!-- Header -->
+      <header class="group sticky top-4 z-30 mb-10 box-content w-full rounded-xl border border-transparent py-1 transition-all duration-300 sm:rounded-2xl [&.not-top]:border-border [&.not-top]:bg-background dark:[&.not-top]:bg-primary-foreground">
+        <header class="flex flex-wrap text-sm sm:flex-nowrap sm:justify-start">
+          <nav class="relative mx-auto flex w-full items-center justify-between sm:flex sm:items-center">
+            <h1 class="flex-none text-xl font-semibold transition-all duration-300 group-[.not-top]:ms-3 sm:group-[.not-top]:ms-5">
+              <span class="magic"><span class="magic-text">CongHoan Home</span></span>
+            </h1>
+            <div class="flex items-center gap-x-2 sm:gap-x-3">
+              <a href="./index.html" class="rounded-lg px-3 py-2 hover:bg-primary-foreground/50">Home</a>
+              <a href="./about.html" class="rounded-lg px-3 py-2 hover:bg-primary-foreground/50">About</a>
+              <a href="./projects.html" class="rounded-lg px-3 py-2 bg-primary-foreground border border-border">Projects</a>
+              <button class="change-theme group/dark rounded-md p-2 transition-all sm:group-[.not-top]:rounded-xl" aria-label="Toggle theme">
+                <i class="ri-sun-line transition-all group-hover/dark:text-primary dark:hidden"></i>
+                <i class="ri-moon-clear-line hidden transition-all group-hover/dark:text-primary dark:block"></i>
+              </button>
+            </div>
+          </nav>
+        </header>
+      </header>
+
+      <div class="flex w-full flex-col gap-y-10 md:w-4/5 lg:w-5/6">
+        <section class="animate flex flex-col gap-y-4 show">
+          <h1 class="text-3xl font-bold">Projects</h1>
+          <p class="text-muted-foreground">Một số dự án mình đang làm / đã làm — ưu tiên những thứ có “chất dev” (đụng code thật, fix bug thật, chạy production thật).</p>
+        </section>
+
+        <section class="animate show grid grid-cols-1 gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-border bg-primary-foreground p-5 transition-all hover:shadow-md">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h2 class="text-lg font-semibold">NRO BCH Server</h2>
+                <p class="text-muted-foreground mt-1">Java server • NPC/Item/Map • CombineService • Fix logic</p>
+              </div>
+              <span class="rounded-full border border-border bg-background px-3 py-1 text-xs text-muted-foreground">Game</span>
+            </div>
+            <ul class="mt-4 list-disc ps-5 text-muted-foreground leading-6">
+              <li>Tối ưu luồng login/tải dữ liệu, giảm lỗi người vào được người không.</li>
+              <li>Sửa logic item/nâng cấp, tránh tạo ID thừa và sai chỉ số ẩn.</li>
+              <li>Custom NPC (quà nạp, đổi tiền, giftcode, nâng đệ, v.v.).</li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-border bg-primary-foreground p-5 transition-all hover:shadow-md">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h2 class="text-lg font-semibold">Bot Zalo (BCH)</h2>
+                <p class="text-muted-foreground mt-1">Node.js/Python • Anti-link • Anti-spam • Command system</p>
+              </div>
+              <span class="rounded-full border border-border bg-background px-3 py-1 text-xs text-muted-foreground">Bot</span>
+            </div>
+            <ul class="mt-4 list-disc ps-5 text-muted-foreground leading-6">
+              <li>Hệ thống lệnh prefix <b>!</b>, alias, phân quyền, module hóa.</li>
+              <li>Tích hợp AI, game, sticker, fetch nội dung, quản trị nhóm.</li>
+              <li>Xử lý rate limit (429), retry + backoff, log lỗi rõ ràng.</li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-border bg-primary-foreground p-5 transition-all hover:shadow-md">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h2 class="text-lg font-semibold">Tour Management (DA1_NHOM3)</h2>
+                <p class="text-muted-foreground mt-1">PHP MVC • MySQL • Admin Dashboard • Booking/Schedule</p>
+              </div>
+              <span class="rounded-full border border-border bg-background px-3 py-1 text-xs text-muted-foreground">Web</span>
+            </div>
+            <ul class="mt-4 list-disc ps-5 text-muted-foreground leading-6">
+              <li>Thiết kế ERD, CRUD đầy đủ, validate và phân quyền.</li>
+              <li>Luồng đặt tour, check xung đột lịch, điểm danh theo ngày.</li>
+              <li>Viết test case, triển khai và hướng dẫn sử dụng cho báo cáo.</li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-border bg-primary-foreground p-5 transition-all hover:shadow-md">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h2 class="text-lg font-semibold">Profile / Branding</h2>
+                <p class="text-muted-foreground mt-1">Landing page • GitHub README • Asset / GIF / UI</p>
+              </div>
+              <span class="rounded-full border border-border bg-background px-3 py-1 text-xs text-muted-foreground">UI</span>
+            </div>
+            <ul class="mt-4 list-disc ps-5 text-muted-foreground leading-6">
+              <li>Tối ưu UI/UX, tối giản nhưng “đậm chất”.</li>
+              <li>Thêm section thông tin, project, contact, copy-to-clipboard.</li>
+              <li>Tối ưu performance: bỏ video preload, giảm tải tài nguyên.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="animate show rounded-2xl border border-border bg-background p-5">
+          <h2 class="text-lg font-semibold">Contact</h2>
+          <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <a class="rounded-xl border border-border bg-primary-foreground p-4 no-underline transition-all hover:shadow-md" href="https://github.com/BCHoan" target="_blank">
+              <div class="flex items-center gap-3"><i class="ri-github-fill text-xl"></i><div><div class="font-medium">GitHub</div><div class="text-muted-foreground">github.com/BCHoan</div></div></div>
+            </a>
+            <a class="rounded-xl border border-border bg-primary-foreground p-4 no-underline transition-all hover:shadow-md" href="./about.html#contact">
+              <div class="flex items-center gap-3"><i class="ri-mail-line text-xl"></i><div><div class="font-medium">Email / Social</div><div class="text-muted-foreground">Xem ở trang About</div></div></div>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <footer class="mx-auto mt-24 w-full text-center">
+        <div class="border-t border-border p-2">
+          <p>© <samp id="year"><script>document.getElementById("year").innerHTML=new Date().getFullYear();</script></samp> CongHoan. All Rights Reserved.</p>
+        </div>
+        <div id="real-time">00:00:00</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="./assets/js/libs/jquery-3.7.1.min.js"></script>
+  <script src="./assets/js/libs/fuiToast.min.js"></script>
+  <script src="./assets/js/libs/fancybox.umd.js"></script>
+  <script src="https://api.thanhdieu.com/addons/cursor-magic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js" data-pace-options='{"restartOnRequestAfter":false,"eventLag":false}'></script>
+  <script src="./assets/js/index.js?v=4.0"></script>
+</body>
+</html>

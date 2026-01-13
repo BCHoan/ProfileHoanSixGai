@@ -1,460 +1,578 @@
-<html lang="vi-VN" class="dark" data-title-loader="𝑪𝒐𝒏𝒈𝑯𝒐𝒂𝒏">
+<!doctype html>
+<html lang="vi" class="theme-dark">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CongHoan - Home</title>
-    <meta property="og:title" content="Bùi Công Hoan | Profile Home">
-    <link rel="shortcut icon" href="https://i.ibb.co/rGMn65d/boss.webp" type="image/x-icon">
-    <meta name="description" content="Hi my name is CongHoan / A freelance / web developer / vexer">
-    <meta name="keywords"
-        content="thanhdieu,web thanh dieu,vuong thanh dieu,thanhdieutv,wsteam,wusteam,thanhdieu home,profile thanhdieu">
-    <link rel="canonical" href="https://thanhdieu.com/">
-    <meta content="ThanhDieuTv" name="author">
-    <meta property="og:type" content="website">
-    <meta content="#FCFCFD" name="theme-color">
-    <meta property="og:image" content="./res/v5/img/bg3.webp">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css?v=3.10">
-    <link rel="stylesheet" href="./assets/css/fuiToast.min.css">
-    <link rel="stylesheet" href="./assets/css/fancybox.css">
-    <link rel="stylesheet" href="./assets/css/index.css?v=3.1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>CongHoan</title>
+  <meta name="description"
+    content="Bùi Công Hoan – Dev NRO, Bot Zalo, Web Developer. Build things. Break things. Fix them." />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css?v=1" />
+  <link rel="stylesheet" href="./assets/css/cursor/main.css?v=1" />
+
 </head>
 
 <body>
-    <div class="flex justify-center bg-background">
-        <div class="pace pace-active">
-            <div class="pace-progress">
-                <div class="pace-progress-inner"></div>
-            </div>
-        </div>
-        <div class="td-loading-v2">
-            <img class="loading2 none" src="./assets/img/avatar.png" alt="Thanh Diệu Loader Screen V2">
-            <div class="ws-loader-text">
-                <h4>Bùi Công Hoan</h4>
-                <span id="waiting-loader">
-                    <i class="ri-loader-4-line icon-spin"></i>
-                    &ensp;Đang tải lời chúc...
-                </span>
-            </div>
-        </div>
-        <div class="pointer-events-none absolute start-0 top-0 z-0 h-1/2 w-full opacity-40"
-            style="background-image:linear-gradient(#659EB966, transparent)"></div>
-        <main
-            class="z-10 flex min-h-screen w-screen max-w-[60rem] flex-col items-center px-4 text-[0.92rem] leading-relaxed sm:px-7 lg:px-10">
-            <header
-                class="group sticky top-4 z-30 mb-16 box-content w-full rounded-xl border border-transparent py-1 transition-all duration-300 sm:rounded-2xl [&.not-top]:border-border [&.not-top]:bg-background dark:[&.not-top]:bg-primary-foreground">
-                <header class="flex flex-wrap text-sm sm:flex-nowrap sm:justify-start">
-                    <nav class="relative mx-auto flex w-full items-center justify-between sm:flex sm:items-center">
-                        <div
-                            class="absolute -left-4 -top-8 -z-10 box-content hidden h-20 w-[calc(100%+2rem)] !duration-0 max-sm:group-[.expanded]:block max-sm:group-[.expanded.not-top]:hidden max-sm:group-[.expanded]:bg-white dark:max-sm:group-[.expanded]:bg-primary-foreground">
-                        </div>
-                        <h1
-                            class="flex-none text-xl font-semibold transition-all duration-300 group-[.not-top]:ms-3 sm:group-[.not-top]:ms-5">
-                            <span class="magic">
-                                <span class="magic-star">
-                                    <svg viewBox="0 0 512 512">
-                                        <path
-                                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="magic-star">
-                                    <svg viewBox="0 0 512 512">
-                                        <path
-                                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="magic-star">
-                                    <svg viewBox="0 0 512 512">
-                                        <path
-                                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="magic-text">CongHoan Home</span>
-                            </span>
-                        </h1>
-                        <div class="flex gap-x-4 sm:gap-x-6">
-                            <div class="flex gap-x-4 transition-all group-[.not-top]:me-1.5 group-[.not-top]:gap-x-2">
-                                <button
-                                    class="change-theme group/dark rounded-md p-2 transition-all sm:group-[.not-top]:rounded-xl">
-                                    <i class="ri-sun-line transition-all group-hover/dark:text-primary dark:hidden"></i>
-                                    <i
-                                        class="ri-moon-clear-line hidden transition-all group-hover/dark:text-primary dark:block"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </nav>
-                </header>
-            </header>
-            <div class="flex w-full flex-col gap-y-10 md:w-4/5 lg:w-5/6">
-                <section class="animate flex flex-col items-center gap-y-7 show">
-                    <div class="relative">
-                        <img src="./assets/img/avataroke.jpg" alt="Avatar"
-                            class="author-avatar rounded-full border p-1">
-                        <img class="crown3" src="./assets/img/mong-vuot-rong.png">
-                    </div>
-                    <div class="flex flex-col items-center gap-y-4">
-                        <h1 class="text-3xl font-bold flex items-center">
-                            Bùi Công Hoan <img class="blue-tick ml-2" src="./assets/img/icon/tick.png">
-                        </h1>
-                        <p>
-                            Lời nói gió bay, hứa càng hay chia tay <span
-                                class="bg-primary-foreground rounded text-transparent hover:text-inherit transition-colors cursor-pointer">càng
-                                thấm 😞.</span>
-                        </p>
-                        <div class="flex flex-wrap justify-center gap-x-7 gap-y-3">
-                            <div class="flex flex-row items-center justify-center gap-x-2">
-                                <i class="ri-map-pin-line"></i>
-                                <p>Vietnam / Hà Nội City</p>
-                            </div>
-                            <a class="flex flex-row items-center justify-center gap-x-2 hover:opacity-75 transition-all"
-                                href="https://github.com/BCHoan" target="_blank">
-                                <i class="ri-github-fill"></i>
-                                <p>My Github</p>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <section class="animate flex flex-col gap-y-5 md:flex-row md:gap-y-0 show">
-                    <div class="text-xl font-semibold md:min-w-36">
-                        <h2>Bio</h2>
-                    </div>
-                    <div class="flex flex-1 flex-col gap-y-3">
-                        <p class="text-muted-foreground mt-1">
-                            Developer / Coder / <del>Designer </del>
-                        </p>
-                        <div class="flex flex-col gap-2 leading-6 text-muted-foreground">
-                            <p>Hello, my name is Công Hoan. I am a member of BuiCongHoan and a freelance programmer,
-                                with a
-                                passion for coding driven by pure interest.</p>
-                            <p>My main interest lies in back-end.</p>
-                            <p>I enjoy overthinking.</p>
-                            <div class="mt-1 flex gap-x-2">
-                                <img src="./assets/img/zerotwo.gif" alt="Music" width="52" height="52"
-                                    class="rounded-md border">
-                            </div>
-                        </div>
-                    </div>
-                    <a class="group inline-flex items-center gap-x-1 rounded-lg bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline w-fit self-end"
-                        href="https://github.com/BCHoan"
-                        target="_blank">
-                        <p class="my-0">Download Source Code</p>
-                        <svg class="my-1 stroke-muted-foreground group-hover:stroke-primary" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2m-8 1V4m0 12-4-4m4 4 4-4" />
-                        </svg>
-                    </a>
-                </section>
-                <section class="animate flex flex-col gap-y-5 md:flex-row md:gap-y-0 show">
-                    <div class="text-xl font-semibold md:min-w-36 mb-4">
-                        <h2>Payment</h2>
-                    </div>
+  <!-- Background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
 
-                    <div class="mb-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <a class="group relative no-underline hover:bg-transparent">
-                            <div
-                                class="relative flex flex-row items-center gap-x-4 rounded-xl border border-border bg-background p-3 transition-all hover:shadow-md hover:-translate-y-1">
-                                <img src="./assets/img/icon/qrtech.jpg"
-                                    class="z-20 h-20 w-20 rounded-lg bg-muted p-2 transition-transform group-hover:scale-105"
-                                    alt="TECH">
-                                <div class="z-20 flex flex-col">
-                                    <div class="font-medium">
-                                        BUI CONG HOAN
-                                        <i data-ws-copy="BUI CONG HOAN"
-                                            class="ri-file-copy-line text-muted-foreground cursor-pointer ml-1"></i>
-                                    </div>
-                                    <div class="font-normal text-muted-foreground mt-1">
-                                        TechComBank <span class="font-medium">612006888888</span>
-                                        <i data-ws-copy="612006888888"
-                                            class="ri-file-copy-line cursor-pointer ml-1"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="group relative no-underline hover:bg-transparent">
-                            <div
-                                class="relative flex flex-row items-center gap-x-4 rounded-xl border border-border bg-background p-3 transition-all hover:shadow-md hover:-translate-y-1">
-                                <img src="./assets/img/icon/qrmbb.jpg"
-                                    class="z-20 h-20 w-20 rounded-lg bg-muted p-2 transition-transform group-hover:scale-105"
-                                    alt="MBB">
-                                <div class="z-20 flex flex-col">
-                                    <div class="font-medium">
-                                        BUI CONG HOAN
-                                        <i data-ws-copy="BUI CONG HOAN"
-                                            class="ri-file-copy-line text-muted-foreground cursor-pointer ml-1"></i>
-                                    </div>
-                                    <div class="font-normal text-muted-foreground mt-1">
-                                        MB Bank <br><span class="font-medium">61200688888</span>
-                                        <i data-ws-copy="61200688888" class="ri-file-copy-line cursor-pointer ml-1"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </section>
-                <section class="animate flex flex-col gap-y-5 md:flex-row md:gap-y-0 show">
-                    <div class="text-xl font-semibold md:min-w-36">
-                        <h2>Picture</h2>
-                    </div>
-                    <div class="flex flex-1 flex-col gap-y-3">
-                        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                            <a class="group overflow-hidden relative flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
-                                data-fancybox="gallery" data-src="./assets/img/nen1.jpg">
-                                <img src="./assets/img/nen1.jpg" alt="Img"
-                                    class="absolute top-0 h-full w-full object-cover">
-                                <div class="z-10 flex flex-col gap-y-0.5 px-5 pb-4 pt-24">
-                                    <h2 class="text-lg font-medium">&ensp;</h2>
-                                    <p class="text-muted-foreground">&ensp;</p>
-                                </div>
-                            </a>
-                            <a class="group overflow-hidden relative flex flex-col gap-y-3 rounded-2xl border border-border bg-primary-foreground transition-all hover:border-foreground/25 hover:shadow-sm"
-                                data-fancybox="gallery" data-src="./assets/img/nen2.jpg">
-                                <<img src="./assets/img/nen2.jpg" alt="Img"
-                                     class="absolute inset-0 w-full h-full object-cover object-center">
-                                <div class="z-10 flex flex-col gap-y-0.5 px-5 pb-4 pt-24">
-                                    <h2 class="text-lg font-medium">&ensp;</h2>
-                                    <p class="text-muted-foreground">&ensp;</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <section class="animate flex flex-col gap-y-5 md:flex-row md:gap-y-0 show">
-                    <div class="text-xl font-semibold md:min-w-36">
-                        <h2>Skills</h2>
-                    </div>
-                    <div class="flex flex-1 flex-col gap-y-3">
-                        <div class="flex flex-col gap-y-2 md:flex-row md:gap-x-5 md:gap-y-0">
-                            <h3 class="w-1/5 font-medium">Web</h3>
-                            <div class="flex md:w-4/5 flex-row flex-wrap gap-x-4 gap-y-2">
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Vue.js</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Nuxt.js</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Node.js</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">React.js</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">TypeScript</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">JavaScript</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">CSS</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">HTML</p>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-y-2 md:flex-row md:gap-x-5 md:gap-y-0">
-                            <h3 class="w-1/5 font-medium">Programming</h3>
-                            <div class="flex md:w-4/5 flex-row flex-wrap gap-x-4 gap-y-2">
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Python</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">PyTorch</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">C</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">C++</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">C#</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">R</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">MySQL</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">PostgreSQL</p>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-y-2 md:flex-row md:gap-x-5 md:gap-y-0">
-                            <h3 class="w-1/5 font-medium">Tools</h3>
-                            <div class="flex md:w-4/5 flex-row flex-wrap gap-x-4 gap-y-2">
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">VSCode</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Vim</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Git</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Linux</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Docker</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Nginx</p>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-y-2 md:flex-row md:gap-x-5 md:gap-y-0">
-                            <h3 class="w-1/5 font-medium">Design</h3>
-                            <div class="flex md:w-4/5 flex-row flex-wrap gap-x-4 gap-y-2">
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Figma</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Photoshop</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Illustrator</p>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-y-2 md:flex-row md:gap-x-5 md:gap-y-0">
-                            <h3 class="w-1/5 font-medium">Other</h3>
-                            <div class="flex md:w-4/5 flex-row flex-wrap gap-x-4 gap-y-2">
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">Markdown</p>
-                                </button>
-                                <button
-                                    class="group inline-flex items-center gap-x-1 bg-primary-foreground border border-border px-2 py-1 text-sm text-muted-foreground transition-all hover:bg-input no-underline cursor-default rounded-xl">
-                                    <p class="my-0">LaTeX</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <button
-                class="z-90 group fixed bottom-12 end-4 flex h-10 w-10 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-primary-foreground text-muted-foreground opacity-0 transition-all duration-300 hover:border-border/75 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 sm:end-8 sm:h-12 sm:w-12 "
-                data-show="true" id="croll-to-top">
-                <div
-                    class="absolute bottom-0 end-0 start-0 top-1 flex items-center justify-center transition-opacity group-hover:opacity-0 group-[.ended]:opacity-1">
-                    <span class="text">0</span>
-                    <span class="text-xs">%</span>
-                </div>
-                <i
-                    class="ri-arrow-up-s-line size-6 opacity-0 transition-opacity group-hover:opacity-100 group-[.ended]:opacity-100"></i>
-            </button>
-            <div
-                class="mt-16 flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md">
-                <span class="relative flex items-center justify-center">
-                    <span
-                        class="absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75"></span>
-                    <span class="relative inline-flex h-2 w-2 rounded-full bg-green-400"></span>
-                </span>
-                <div>
-                    <p id="cham-ngon" class="font-medium text-muted-foreground">Loading...</p>
-                </div>
-            </div>
-            <footer class="mx-auto mt-24 w-full text-center">
-                <div class="border-t border-border p-2">
-                    <div class="flex flex-col items-center justify-center gap-y-3 sm:flex-row sm:gap-y-0">
-                        <div class="flex flex-col items-center justify-center gap-2 text-sm sm:flex-row sm:gap-x-4">
-                            <p>
-                                ©
-                                <samp id="year">
-                                    <script>
-                                        document.getElementById("year").innerHTML = new Date().getFullYear();
-                                    </script>
-                                </samp>
-                                <a href="/">CongHoan.Com</a>
-                                . All Rights Reserved.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id="real-time">00:00:00</div>
-            </footer>
-            <div id="toast-prompt" style="padding: 10px; border: 1px solid #ccc; background: #fafafa;">
-                <img src="./assets/img/logonhac.gif" width="52" height="52">
-                <span style="color: red;">
-                    Bạn có muốn cho phép vừa nghe nhạc vừa lướt trang web không ?
-                </span>
-                <button class="close-btn">Không hẹn lại lần sau</button>
-                <button class="confirm-btn">Cho phép luôn</button>
-            </div>
+  <!-- Topbar -->
+  <header class="topbar" id="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__dot"></span>
+        <span class="brand__name">CongHoan</span>
+        <span class="brand__tag">Developer</span>
+      </a>
 
-            <audio id="background-music" loop></audio>
+      <nav class="nav" aria-label="Primary">
+        <a href="./about.html" class="nav__link">About</a>
+        <a href="./skills.html" class="nav__link">MySkill</a>
+        <a href="./job.html" class="nav__link">Job</a>
+        <a href="./community.html" class="nav__link">Community</a>
+        <a href="./contact.html" class="nav__link nav__cta">Contact</a>
 
-            <script>
-                const toast = document.getElementById("toast-prompt");
-                const music = document.getElementById("background-music");
-                const btnConfirm = document.querySelector(".confirm-btn");
-                const btnClose = document.querySelector(".close-btn");
-                btnClose.addEventListener("click", () => {
-                    toast.style.display = "none";
-                });
-                btnConfirm.addEventListener("click", async () => {
-                    toast.style.display = "none";
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="icoSun"></i>
+          <i class="ri-moon-clear-line" id="icoMoon"></i>
+        </button>
 
-                    try {
-                        let res = await fetch("https://api.fui.vn/getmusiclist");
-                        let data = await res.json();
-
-                        if (data.songs && data.songs.length > 0) {
-                            let randomSong = data.songs[Math.floor(Math.random() * data.songs.length)];
-
-                            music.src = randomSong;
-                            await music.play();
-                        } else {
-                            console.warn("Danh sách nhạc trống.");
-                        }
-                    } catch (err) {
-                        console.error("Không tải được nhạc:", err);
-                    }
-                });
-            </script>
-
-        </main>
+        <button class="icon-btn nav__burger" id="burgerBtn" type="button" aria-label="Open menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </nav>
     </div>
-    <script src="./assets/js/libs/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/libs/fuiToast.min.js"></script>
-    <script src="./assets/js/libs/fancybox.umd.js"></script>
-    <script src="https://api.thanhdieu.com/addons/cursor-magic.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"
-        data-pace-options='{"restartOnRequestAfter":false,"eventLag":false}'></script>
-    <script src="./assets/js/index.js?v=3.8"></script>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="drawer__head">
+          <div class="drawer__title">Menu</div>
+          <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Close menu">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+        <div class="drawer__links">
+          <a href="./about.html" class="drawer__link">About</a>
+          <a href="./skills.html" class="drawer__link">MySkill</a>
+          <a href="./job.html" class="drawer__link">Job</a>
+          <a href="./community.html" class="drawer__link">Community</a>
+          <a href="./contact.html" class="drawer__link drawer__link--cta">Contact</a>
+        </div>
+      </div>
+      <div class="drawer__backdrop" id="drawerBackdrop" tabindex="-1"></div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container" id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__card card">
+        <div class="hero__left">
+          <div class="hero__avatarWrap">
+            <div class="avatar">
+              <img src="./assets/img/avataroke.jpg" alt="Avatar" />
+              <span class="avatar__badge"><i class="ri-code-s-slash-line"></i></span>
+            </div>
+            <img class="crown3" src="./assets/img/mong-vuot-rong.png" alt="">
+          </div>
+
+          <div class="hero__meta">
+            <h1 class="hero__title">
+              Bùi Công Hoan
+              <span class="pill pill--verified"><img src="./assets/img/icon/tick.png" alt="Verified"
+                  class="pill__icon" /></span>
+            </h1>
+
+            <p class="hero__subtitle">
+              Dev NRO • Bot Zalo • Web Developer — “Code không bug thì không phải code mình viết.”
+            </p>
+
+            <div class="hero__chips">
+              <span class="chip"><i class="ri-map-pin-2-line"></i> <span id="locationText">Thái Bình</span></span>
+              <a class="chip chip--link" href="mailto:hoandeptrai61@gmail.com"><i class="ri-mail-line"></i> <span
+                  id="emailText">hoandeptrai61@gmail.com</span></a>
+              <a class="chip chip--link" href="tel:+84395134812"><i class="ri-phone-line"></i> <span id="phoneText">+84
+                  395 134 812</span></a>
+            </div>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="./contact.html">
+                <i class="ri-send-plane-2-line"></i> Liên hệ
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/BCHoan" target="_blank" rel="noreferrer">
+                <i class="ri-github-fill"></i> GitHub
+              </a>
+              <button class="btn btn--ghost" type="button" id="copyEmailBtn">
+                <i class="ri-file-copy-2-line"></i> Copy Email
+              </button>
+            </div>
+
+            <div class="hero__stats">
+              <div class="stat">
+                <div class="stat__num">Java</div>
+                <div class="stat__label">Game Server</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">Node.js</div>
+                <div class="stat__label">Zalo Bot</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">PHP</div>
+                <div class="stat__label">Web / CRUD</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="mini card card--soft">
+            <div class="mini__head">
+              <div class="mini__title">Status</div>
+              <div class="mini__badge">
+                <span class="dot dot--ok"></span> Online
+              </div>
+            </div>
+            <div class="mini__body">
+              <div class="mini__row">
+                <span class="muted">Realtime</span>
+                <span class="mono" id="clock">00:00:00</span>
+              </div>
+              <div class="mini__row">
+                <span class="muted">Quote</span>
+                <span id="quoteText">Loading...</span>
+              </div>
+              <div class="mini__row">
+                <span class="muted">Focus</span>
+                <span>Java server • Bot • Web</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini card card--soft">
+            <div class="mini__head">
+              <div class="mini__title">Quick Links</div>
+            </div>
+            <div class="mini__body">
+              <a class="quick" href="./skills.html"><i class="ri-bar-chart-2-line"></i> Skills</a>
+              <a class="quick" href="./job.html"><i class="ri-briefcase-2-line"></i> Services</a>
+              <a class="quick" href="./contact.html#payment"><i class="ri-bank-card-line"></i> Payment</a>
+              <a class="quick" href="./community.html"><i class="ri-group-line"></i> Community</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <h2 class="section__title">About</h2>
+        <p class="section__desc">Giới thiệu ngắn gọn, rõ giá trị, tránh dài dòng.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-user-3-line"></i> Mình là ai</h3>
+          </div>
+          <div class="card__body">
+            <p>
+              Mình tập trung vào <b>backend logic</b> (Java game server), <b>automation/bot</b> (Node.js), và
+              <b>web</b> (PHP). Ưu tiên flow rõ ràng, log dễ trace, và tối ưu những chỗ “đau”.
+            </p>
+
+            <div class="list">
+              <div class="list__item"><i class="ri-check-line"></i> Debug nhanh, khoanh vùng đúng</div>
+              <div class="list__item"><i class="ri-check-line"></i> Clean flow, validate rõ ràng</div>
+              <div class="list__item"><i class="ri-check-line"></i> Làm được – chạy ổn – dễ mở rộng</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-information-line"></i> Thông tin</h3>
+          </div>
+          <div class="card__body">
+            <div class="kv">
+              <div class="kv__row">
+                <div class="kv__k"><i class="ri-mail-line"></i> Email</div>
+                <div class="kv__v"><a href="mailto:hoandeptrai61@gmail.com" class="link">hoandeptrai61@gmail.com</a>
+                </div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k"><i class="ri-phone-line"></i> SĐT</div>
+                <div class="kv__v"><a href="tel:+84395134812" class="link">+84 395 134 812</a></div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k"><i class="ri-map-pin-2-line"></i> Location</div>
+                <div class="kv__v">Việt Nam</div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k"><i class="ri-github-fill"></i> GitHub</div>
+                <div class="kv__v"><a href="https://github.com/BCHoan" target="_blank" rel="noreferrer"
+                    class="link">github.com/BCHoan</a></div>
+              </div>
+            </div>
+
+            <div class="note">
+              <i class="ri-lightbulb-flash-line"></i>
+              Tip: thay email/sđt/location 1 chỗ là xong, không cần sửa nhiều nơi.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <h2 class="section__title">MySkill</h2>
+        <p class="section__desc">Thanh tiến độ rõ ràng, nhìn “premium”, có animation nhẹ.</p>
+      </div>
+
+      <div class="card">
+        <div class="card__body">
+          <div class="skills">
+            <div class="skill" data-value="99">
+              <div class="skill__top">
+                <div class="skill__name">Web Design</div>
+                <div class="skill__pct"><span class="skill__num">0</span>%</div>
+              </div>
+              <div class="bar">
+                <div class="bar__fill"></div>
+              </div>
+            </div>
+
+            <div class="skill" data-value="70">
+              <div class="skill__top">
+                <div class="skill__name">Java Programming</div>
+                <div class="skill__pct"><span class="skill__num">0</span>%</div>
+              </div>
+              <div class="bar">
+                <div class="bar__fill"></div>
+              </div>
+            </div>
+
+            <div class="skill" data-value="90">
+              <div class="skill__top">
+                <div class="skill__name">JavaScript</div>
+                <div class="skill__pct"><span class="skill__num">0</span>%</div>
+              </div>
+              <div class="bar">
+                <div class="bar__fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAYMENT -->
+    <section class="section" id="payment">
+      <div class="section__head">
+        <h2 class="section__title">Payment</h2>
+        <p class="section__desc">Hiển thị phương thức thanh toán gọn, dễ copy.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card card--soft">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-bank-line"></i> Techcombank</h3>
+          </div>
+          <div class="card__body">
+            <div class="kv">
+              <div class="kv__row">
+                <div class="kv__k">STK</div>
+                <div class="kv__v mono">
+                  <span id="tcbAcc">612006888888</span>
+                  <button class="mini-btn" data-copy="#tcbAcc"><i class="ri-file-copy-2-line"></i></button>
+                </div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k">Chủ TK</div>
+                <div class="kv__v">Bùi Công Hoan</div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k">Nội dung</div>
+                <div class="kv__v mono">
+                  <span id="tcbNote">CONGHOAN - DONHANG</span>
+                  <button class="mini-btn" data-copy="#tcbNote"><i class="ri-file-copy-2-line"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card--soft">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-bank-card-line"></i> MBBank</h3>
+          </div>
+          <div class="card__body">
+            <div class="kv">
+              <div class="kv__row">
+                <div class="kv__k">STK</div>
+                <div class="kv__v mono">
+                  <span id="mbAcc">61200688888</span>
+                  <button class="mini-btn" data-copy="#mbAcc"><i class="ri-file-copy-2-line"></i></button>
+                </div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k">Chủ TK</div>
+                <div class="kv__v">Bùi Công Hoan</div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k">Nội dung</div>
+                <div class="kv__v mono">
+                  <span id="mbNote">CONGHOAN - DONHANG</span>
+                  <button class="mini-btn" data-copy="#mbNote"><i class="ri-file-copy-2-line"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOB -->
+    <section class="section" id="job">
+      <div class="section__head">
+        <h2 class="section__title">Job</h2>
+        <p class="section__desc">Dịch vụ rõ ràng, dễ chốt, có “gói”.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-briefcase-2-line"></i> Freelance</h3>
+          </div>
+          <div class="card__body">
+            <p class="muted">Nhận làm theo yêu cầu, ưu tiên deadline rõ.</p>
+            <div class="tags">
+              <span class="tag">Fix bug</span>
+              <span class="tag">Build feature</span>
+              <span class="tag">Deploy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-gamepad-line"></i> Bán SRC Game</h3>
+          </div>
+          <div class="card__body">
+            <p class="muted">SRC NRO/Java server: item, NPC, combine, event.</p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">Logic</span>
+              <span class="tag">Anti-bug</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-global-line"></i> Web + Bot Zalo</h3>
+          </div>
+          <div class="card__body">
+            <p class="muted">Web nhanh gọn + bot quản trị nhóm, game, automation.</p>
+            <div class="tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--soft">
+        <div class="card__body job-cta">
+          <div>
+            <div class="job-cta__title">Bạn cần báo giá nhanh?</div>
+            <div class="muted">Gửi yêu cầu + deadline + ngân sách dự kiến, mình phản hồi theo checklist.</div>
+          </div>
+          <a class="btn btn--primary" href="./contact.html"><i class="ri-chat-3-line"></i> Nhắn ngay</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section class="section" id="community">
+      <div class="section__head">
+        <h2 class="section__title">Community</h2>
+        <p class="section__desc">Box Zalo / nhóm cộng đồng.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-group-line"></i> Box Zalo</h3>
+          </div>
+          <div class="card__body">
+            <p class="muted">Tham gia box để hỏi đáp, chia sẻ SRC/bugfix, cập nhật project.</p>
+            <div class="community">
+              <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">
+                <i class="ri-qr-code-line"></i> Link/QR Box Zalo
+              </a>
+              <button class="btn btn--ghost" type="button" id="copyZaloBtn">
+                <i class="ri-file-copy-2-line"></i> Copy ID/Link
+              </button>
+            </div>
+            <div class="note">
+              <i class="ri-shield-check-line"></i> Nội quy: không spam, không leak data, tôn trọng lẫn nhau.
+            </div>
+          </div>
+        </div>
+
+        <div class="card card--soft">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-megaphone-line"></i> Update</h3>
+          </div>
+          <div class="card__body">
+            <div class="timeline">
+              <div class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div>
+                  <div class="timeline__title">Mở bán src theo gói</div>
+                  <div class="muted">Basic / Pro / Full + hướng dẫn setup.</div>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div>
+                  <div class="timeline__title">Bot Zalo quản trị + mini-game</div>
+                  <div class="muted">Anti-link, anti-spam, welcome card, logs.</div>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <div class="timeline__dot"></div>
+                <div>
+                  <div class="timeline__title">Web profile / landing</div>
+                  <div class="muted">Gọn – nhanh – tối ưu trải nghiệm.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section__head">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__desc">Form gọn; có nút copy nhanh; CTA rõ.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-contacts-line"></i> Liên hệ nhanh</h3>
+          </div>
+          <div class="card__body">
+            <div class="contact-box">
+              <a class="contact-item" href="mailto:hoandeptrai61@gmail.com">
+                <i class="ri-mail-line"></i>
+                <div>
+                  <div class="contact-item__k">Email</div>
+                  <div class="contact-item__v">hoandeptrai61@gmail.com</div>
+                </div>
+              </a>
+
+              <a class="contact-item" href="tel:+84395134812">
+                <i class="ri-phone-line"></i>
+                <div>
+                  <div class="contact-item__k">SĐT</div>
+                  <div class="contact-item__v">+84 395 134 812</div>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <i class="ri-map-pin-2-line"></i>
+                <div>
+                  <div class="contact-item__k">Location</div>
+                  <div class="contact-item__v">Việt Nam</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__actions" style="margin-top:12px;">
+              <button class="btn btn--ghost" type="button" data-copy="#emailText">
+                <i class="ri-file-copy-2-line"></i> Copy Email
+              </button>
+              <button class="btn btn--ghost" type="button" data-copy="#phoneText">
+                <i class="ri-file-copy-2-line"></i> Copy SĐT
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card--soft">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-chat-1-line"></i> Gửi yêu cầu</h3>
+          </div>
+          <div class="card__body">
+            <form class="form" id="contactForm">
+              <div class="form__row">
+                <label class="form__label">Tên</label>
+                <input class="input" name="name" placeholder="Bạn tên gì?" autocomplete="name" />
+              </div>
+              <div class="form__row">
+                <label class="form__label">Nhu cầu</label>
+                <select class="input" name="service">
+                  <option value="Fix bug">Fix bug</option>
+                  <option value="Web">Web</option>
+                  <option value="Bot Zalo">Bot Zalo</option>
+                  <option value="SRC game">SRC game</option>
+                </select>
+              </div>
+              <div class="form__row">
+                <label class="form__label">Nội dung</label>
+                <textarea class="input" name="message" rows="4"
+                  placeholder="Mô tả ngắn: yêu cầu + deadline + ngân sách dự kiến"></textarea>
+              </div>
+              <button class="btn btn--primary" type="submit">
+                <i class="ri-send-plane-2-line"></i> Tạo tin nhắn (copy)
+              </button>
+              <div class="form__hint muted">Form này không gửi server. Nó tạo sẵn nội dung để bạn copy gửi Zalo/Mail.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner card card--soft">
+        <div class="footer__left">
+          <div class="muted">© <span id="year"></span> CongHoan. All Rights Reserved.</div>
+        </div>
+        <div class="footer__right">
+          <a class="link" href="#top"><i class="ri-arrow-up-s-line"></i> Lên đầu trang</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- JS -->
+  <script src="./assets/js/main.js?v=1" defer></script>
+
 </body>
 
 </html>

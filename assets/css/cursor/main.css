@@ -1,0 +1,6 @@
+/* Custom cursor pack (optional) */
+:root { --cursor-default: url("./default.cur"), default; --cursor-link: url("./link.cur"), pointer; --cursor-text: url("./Text-Select.cur"), text; }
+
+body { cursor: var(--cursor-default); }
+a, button, [role="button"], .btn, .icon-btn, .nav__link { cursor: var(--cursor-link); }
+input, textarea, select { cursor: var(--cursor-text); }

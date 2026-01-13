@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="vi" class="theme-dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Community • CongHoan</title>
+  <meta name="description" content="Community – Box Zalo, cập nhật src & fix." />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css?v=1" />
+  <link rel="stylesheet" href="./assets/css/cursor/main.css?v=1" />
+</head>
+
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Topbar -->
+  <header class="topbar" id="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__dot"></span>
+        <span class="brand__name">CongHoan</span>
+        <span class="brand__tag">Developer</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="./about.html" class="nav__link">About</a>
+        <a href="./skills.html" class="nav__link">MySkill</a>
+        <a href="./job.html" class="nav__link">Job</a>
+        <a href="./community.html" class="nav__link is-active">Community</a>
+        <a href="./contact.html" class="nav__link nav__cta">Contact</a>
+
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="icoSun"></i>
+          <i class="ri-moon-clear-line" id="icoMoon"></i>
+        </button>
+
+        <button class="icon-btn burger" id="burgerBtn" type="button" aria-label="Open menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Drawer (mobile) -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__panel">
+        <div class="drawer__head">
+          <div class="drawer__title">Menu</div>
+          <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Close menu"><i
+              class="ri-close-line"></i></button>
+        </div>
+        <div class="drawer__links">
+          <a href="./about.html" class="drawer__link">About</a>
+          <a href="./skills.html" class="drawer__link">MySkill</a>
+          <a href="./job.html" class="drawer__link">Job</a>
+          <a href="./community.html" class="drawer__link">Community</a>
+          <a href="./contact.html" class="drawer__link drawer__link--cta">Contact</a>
+        </div>
+      </div>
+      <div class="drawer__backdrop" id="drawerBackdrop" tabindex="-1"></div>
+    </div>
+  </header>
+
+  <main class="container" id="top">
+    <div class="page-head">
+      <div class="page-head__inner">
+        <div>
+          <div class="breadcrumbs"><a href="./index.html">Home</a> <span class="muted">/</span> Community</div>
+          <h1 class="page-title">Community</h1>
+          <p class="page-subtitle">Box Zalo để trao đổi src, fix bug, share tip – và nhận update nhanh.</p>
+        </div>
+        <div class="pill" title="Online status">
+          <span class="dot dot--on"></span>
+          <span class="muted">Online</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="grid grid--2">
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-chat-3-line"></i> Box Zalo</h3>
+          </div>
+          <div class="card__body">
+            <p class="muted">Dán link box vào đây. Mọi người vào để cập nhật bản fix, tool, event và trao đổi kỹ thuật.</p>
+
+            <div class="kv" style="margin-top: 12px;">
+              <div class="kv__row">
+                <div class="kv__k">Tên box</div>
+                <div class="kv__v"><b>CongHoan Dev</b></div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k">Link</div>
+                <div class="kv__v">
+                  <span id="zaloBoxLink">https://zalo.me/g/your-box</span>
+                  <button class="btn btn--ghost" data-copy="#zaloBoxLink" style="margin-left: 10px;">
+                    <i class="ri-file-copy-2-line"></i> Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="callout card card--soft" style="margin-top: 16px;">
+              <div class="callout__left">
+                <div class="callout__title">Quy ước nhanh</div>
+                <div class="muted">Không spam, không quảng cáo; hỏi rõ yêu cầu + ảnh/log để dễ hỗ trợ.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-notification-3-line"></i> Update</h3>
+          </div>
+          <div class="card__body">
+            <div class="timeline">
+              <div class="titem">
+                <div class="titem__dot"></div>
+                <div>
+                  <div class="titem__title">UI/UX Profile</div>
+                  <div class="muted">Tối ưu multi-page + đường dẫn assets chuẩn.</div>
+                </div>
+              </div>
+              <div class="titem">
+                <div class="titem__dot"></div>
+                <div>
+                  <div class="titem__title">Bot Zalo</div>
+                  <div class="muted">Anti-link/anti-spam, welcome card, mini game.</div>
+                </div>
+              </div>
+              <div class="titem">
+                <div class="titem__dot"></div>
+                <div>
+                  <div class="titem__title">Java server (NRO)</div>
+                  <div class="muted">Combine/NPC/Item logic, fix crash & perf.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="muted" style="margin-top: 12px;">Bạn có thể thêm “changelog” thật ở đây, hoặc gắn link GitHub.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="callout card card--soft">
+        <div class="callout__left">
+          <div class="callout__title">Cần hỗ trợ nhanh?</div>
+          <div class="muted">Gửi yêu cầu rõ ràng (hạng mục + ngân sách + deadline).</div>
+        </div>
+        <a class="btn btn--primary" href="./contact.html"><i class="ri-send-plane-2-line"></i> Contact</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner card card--soft">
+        <div class="footer__left">
+          <div class="muted">© <span id="year"></span> CongHoan. All Rights Reserved.</div>
+        </div>
+        <div class="footer__right">
+          <a class="link" href="#top"><i class="ri-arrow-up-s-line"></i> Lên đầu trang</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./assets/js/main.js?v=1" defer></script>
+</body>
+
+</html>

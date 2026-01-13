@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="vi" class="theme-dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>About • CongHoan</title>
+  <meta name="description" content="About Bùi Công Hoan – Dev NRO, Bot Zalo, Web Developer." />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css?v=1" />
+  <link rel="stylesheet" href="./assets/css/cursor/main.css?v=1" />
+</head>
+
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Topbar -->
+  <header class="topbar" id="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__dot"></span>
+        <span class="brand__name">CongHoan</span>
+        <span class="brand__tag">Developer</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="./about.html" class="nav__link is-active">About</a>
+        <a href="./skills.html" class="nav__link">MySkill</a>
+        <a href="./job.html" class="nav__link">Job</a>
+        <a href="./community.html" class="nav__link">Community</a>
+        <a href="./contact.html" class="nav__link nav__cta">Contact</a>
+
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="icoSun"></i>
+          <i class="ri-moon-clear-line" id="icoMoon"></i>
+        </button>
+
+        <button class="icon-btn nav__burger" id="burgerBtn" type="button" aria-label="Open menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="drawer__head">
+          <div class="drawer__title">Menu</div>
+          <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Close menu">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+        <div class="drawer__links">
+          <a href="./about.html" class="drawer__link">About</a>
+          <a href="./skills.html" class="drawer__link">MySkill</a>
+          <a href="./job.html" class="drawer__link">Job</a>
+          <a href="./community.html" class="drawer__link">Community</a>
+          <a href="./contact.html" class="drawer__link drawer__link--cta">Contact</a>
+        </div>
+      </div>
+      <div class="drawer__backdrop" id="drawerBackdrop" tabindex="-1"></div>
+    </div>
+  </header>
+
+  <main class="container" id="top">
+    <section class="page-head">
+      <div class="page-head__inner">
+        <div>
+          <div class="breadcrumbs">
+            <a href="./index.html">Home</a>
+            <span>›</span>
+            <span>About</span>
+          </div>
+          <h1 class="page-title">About</h1>
+          <p class="page-subtitle">Giới thiệu ngắn gọn, rõ giá trị, tập trung vào thứ bạn làm tốt nhất.</p>
+        </div>
+        <a class="btn btn--ghost" href="./contact.html"><i class="ri-send-plane-2-line"></i> Liên hệ</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid grid--2">
+        <div class="card">
+          <div class="card__head">
+            <h2 class="card__title"><i class="ri-user-3-line"></i> Mình là ai</h2>
+          </div>
+          <div class="card__body">
+            <div class="hero__left" style="gap:14px;align-items:flex-start;">
+              <div class="avatar" style="width:78px;height:78px;">
+                <img src="./assets/img/avataroke.jpg" alt="Bùi Công Hoan" />
+            <img class="avatar__crown" src="./assets/img/mong-vuot-rong.png" alt="" aria-hidden="true" />
+                <img class="avatar__crown" src="./assets/img/mong-vuot-rong.png" alt="" aria-hidden="true" />
+                <span class="avatar__badge" title="Coder Mode"><i class="ri-code-s-slash-line"></i></span>
+              </div>
+              <div style="flex:1;min-width:0;">
+                <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                  <h3 style="margin:0;">Bùi Công Hoan</h3>
+                  <span class="pill pill--verified"><img src="./assets/img/icon/tick.png" alt="Verified" class="pill__icon" /> Verified</span>
+                </div>
+                <p class="muted" style="margin:8px 0 0;">
+                  Dev NRO • Bot Zalo • Web Developer — “Code không bug thì không phải code mình viết.”
+                </p>
+              </div>
+            </div>
+
+            <div class="list" style="margin-top:14px;">
+              <div class="list__item"><i class="ri-check-line"></i> Tập trung backend logic (Java game server) + automation/bot (Node.js) + web (PHP/JS).</div>
+              <div class="list__item"><i class="ri-check-line"></i> Ưu tiên flow rõ, validate rõ, log dễ trace, tối ưu chỗ “đau”.</div>
+              <div class="list__item"><i class="ri-check-line"></i> Giao diện gọn, thao tác nhanh, tối ưu trải nghiệm người dùng.</div>
+            </div>
+
+            <div class="tagset" style="margin-top:12px;">
+              <span class="tag">Java</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <h2 class="card__title"><i class="ri-contacts-book-2-line"></i> Thông tin</h2>
+          </div>
+          <div class="card__body">
+            <div class="kv">
+              <div class="kv__row">
+                <div class="kv__k"><i class="ri-map-pin-2-line"></i> Location</div>
+                <div class="kv__v">Việt Nam</div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k"><i class="ri-mail-line"></i> Email</div>
+                <div class="kv__v"><b class="copy" data-copy="hoandeptrai61@gmail.com">hoandeptrai61@gmail.com</b></div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k"><i class="ri-phone-line"></i> SĐT</div>
+                <div class="kv__v"><b class="copy" data-copy="+84395134812">+84 395 134 812</b></div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k"><i class="ri-github-fill"></i> GitHub</div>
+                <div class="kv__v"><a class="link" href="https://github.com/BCHoan" target="_blank" rel="noreferrer">github.com/BCHoan</a></div>
+              </div>
+            </div>
+
+            <div class="callout card card--soft" style="margin-top:14px;">
+              <div class="callout__left">
+                <div class="callout__title">Tip</div>
+                <div class="muted">Đổi email/sđt/location ở trang Contact để dùng chung toàn site.</div>
+              </div>
+              <a class="btn btn--primary" href="./contact.html"><i class="ri-send-plane-2-line"></i> Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner card card--soft">
+        <div class="footer__left">
+          <div class="muted">© <span id="year"></span> CongHoan. All Rights Reserved.</div>
+        </div>
+        <div class="footer__right">
+          <a class="link" href="#top"><i class="ri-arrow-up-s-line"></i> Lên đầu trang</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./assets/js/main.js?v=1" defer></script>
+</body>
+
+</html>

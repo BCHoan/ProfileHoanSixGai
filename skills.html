@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="vi" class="theme-dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>MySkill • CongHoan</title>
+  <meta name="description" content="Skills – Web Design, Java programming, JavaScript." />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css?v=1" />
+  <link rel="stylesheet" href="./assets/css/cursor/main.css?v=1" />
+</head>
+
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__dot"></span>
+        <span class="brand__name">CongHoan</span>
+        <span class="brand__tag">Developer</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="./about.html" class="nav__link">About</a>
+        <a href="./skills.html" class="nav__link is-active">MySkill</a>
+        <a href="./job.html" class="nav__link">Job</a>
+        <a href="./community.html" class="nav__link">Community</a>
+        <a href="./contact.html" class="nav__link nav__cta">Contact</a>
+
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="icoSun"></i>
+          <i class="ri-moon-line" id="icoMoon"></i>
+        </button>
+
+        <button class="icon-btn burger" id="burgerBtn" type="button" aria-label="Open menu">
+          <i class="ri-menu-4-line"></i>
+        </button>
+      </nav>
+
+      <div class="drawer" id="drawer" aria-hidden="true">
+        <div class="drawer__panel">
+          <div class="drawer__top">
+            <div class="drawer__title">Menu</div>
+            <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Close menu">
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+          <div class="drawer__links">
+            <a href="./about.html" class="drawer__link">About</a>
+            <a href="./skills.html" class="drawer__link">MySkill</a>
+            <a href="./job.html" class="drawer__link">Job</a>
+            <a href="./community.html" class="drawer__link">Community</a>
+            <a href="./contact.html" class="drawer__link drawer__link--cta">Contact</a>
+          </div>
+        </div>
+        <div class="drawer__backdrop" id="drawerBackdrop" tabindex="-1"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="top">
+    <header class="page-head">
+      <div class="page-head__inner">
+        <div>
+          <div class="breadcrumbs"><a href="./index.html">Home</a> <i class="ri-arrow-right-s-line"></i> <span>MySkill</span></div>
+          <h1 class="page-title">MySkill</h1>
+          <p class="page-subtitle">Thanh tiến độ rõ ràng, animation nhẹ. Mục tiêu: dễ đọc, dễ so sánh, không rối.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" aria-label="Skills">
+      <div class="card">
+        <div class="card__body">
+          <div class="skills">
+            <div class="skill" data-value="99">
+              <div class="skill__row">
+                <div class="skill__name">Web design</div>
+                <div class="skill__val"><span class="skill__num">0</span>%</div>
+              </div>
+              <div class="bar"><div class="bar__fill"></div></div>
+            </div>
+
+            <div class="skill" data-value="70">
+              <div class="skill__row">
+                <div class="skill__name">Java programming</div>
+                <div class="skill__val"><span class="skill__num">0</span>%</div>
+              </div>
+              <div class="bar"><div class="bar__fill"></div></div>
+            </div>
+
+            <div class="skill" data-value="90">
+              <div class="skill__row">
+                <div class="skill__name">JavaScript</div>
+                <div class="skill__val"><span class="skill__num">0</span>%</div>
+              </div>
+              <div class="bar"><div class="bar__fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid--2" style="margin-top: 16px;">
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-stack-line"></i> Tech stack</h3>
+          </div>
+          <div class="card__body">
+            <div class="tagset">
+              <span class="tag">Java</span>
+              <span class="tag">PHP</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Vue/React</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Git</span>
+            </div>
+            <p class="muted" style="margin-top: 10px;">Ưu tiên: clean flow, validate rõ, log dễ trace, tối ưu chỗ “đau”.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-award-line"></i> Điểm mạnh</h3>
+          </div>
+          <div class="card__body">
+            <div class="list">
+              <div class="list__item"><i class="ri-check-line"></i> Debug nhanh: bóc tách flow → khoanh vùng → fix có kiểm chứng</div>
+              <div class="list__item"><i class="ri-check-line"></i> Backend logic: item/NPC/combine, auth, CRUD, API</div>
+              <div class="list__item"><i class="ri-check-line"></i> UI gọn: dashboard, table, filter/search, validation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner card card--soft">
+        <div class="footer__left">
+          <div class="muted">© <span id="year"></span> CongHoan. All Rights Reserved.</div>
+        </div>
+        <div class="footer__right">
+          <a class="link" href="#top"><i class="ri-arrow-up-s-line"></i> Lên đầu trang</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./assets/js/main.js?v=1" defer></script>
+</body>
+
+</html>
