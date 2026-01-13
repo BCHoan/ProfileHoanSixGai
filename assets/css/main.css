@@ -67,7 +67,7 @@ img {
     margin-inline: auto;
 }
 
-/* Page header (for About/Skills/Job/Community/Contact pages) */
+/* Page header */
 .page-head {
     padding: 34px 0 14px;
 }
@@ -205,7 +205,6 @@ html.theme-light .bg-grid {
     background: var(--panel);
 }
 
-/* Active nav (multi-page) */
 .nav__link.is-active {
     color: var(--text);
     background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 22%, transparent), transparent);
@@ -394,45 +393,62 @@ html.theme-light #icoMoon {
     font-family: var(--mono);
 }
 
-/* Hero */
+/* =========================
+   HERO (FIXED)
+   ========================= */
+
+/* Hero card: to hơn + không làm mini bị kéo dài */
+.hero__card {
+    position: relative;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    gap: 16px;
+
+    padding: 32px 26px 26px;
+    min-height: 310px;
+    /* khung to hơn */
+    border-radius: 30px;
+}
+
+/* Left layout */
+.hero__left {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 18px;
+    align-items: center;
+    min-width: 0;
+    overflow: visible;
+}
 
 .hero__meta {
     min-width: 0;
-    /* chống tràn chữ gây lệch */
-}
-
-
-.avatar img {
-    width: 100%;
-    height: 100%;
-    border-radius: 999px;
-    object-fit: cover;
-    display: block;
 }
 
 .hero__title {
     margin: 0;
     font-size: 28px;
     line-height: 1.2;
-
     display: flex;
     align-items: center;
-    /* FIX: icon tick + pill thẳng hàng */
     gap: 10px;
     flex-wrap: wrap;
 }
 
-
 .pill {
     font-size: 12px;
-    padding: 6px 10px;
+    padding: 6px 0px;
     border-radius: 999px;
-    border: 1px solid var(--border);
-    background: var(--panel2);
     color: var(--muted);
     display: inline-flex;
     align-items: center;
     gap: 6px;
+}
+
+.pill--verified .pill__icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
 }
 
 .hero__subtitle {
@@ -488,7 +504,9 @@ html.theme-light #icoMoon {
 }
 
 .btn--primary {
-    background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 45%, transparent), color-mix(in srgb, var(--brand2) 20%, transparent));
+    background: linear-gradient(135deg,
+            color-mix(in srgb, var(--brand) 45%, transparent),
+            color-mix(in srgb, var(--brand2) 20%, transparent));
     border-color: color-mix(in srgb, var(--brand) 35%, var(--border));
 }
 
@@ -520,8 +538,85 @@ html.theme-light #icoMoon {
     margin-top: 2px;
 }
 
-.mini {
+/* Avatar wrap */
+.hero__avatarWrap {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    overflow: visible;
+    margin-left: 8px;
+}
+
+/* Avatar (nằm dưới crown) */
+.avatar {
+    width: 190px;
+    height: 190px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--panel2);
+    padding: 7px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: visible;
+    z-index: 10;
+    box-shadow: 0 12px 34px rgba(0, 0, 0, .35);
+}
+
+.avatar img {
+    width: 100%;
     height: 100%;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+/* Crown: ÔM avatar (đè lên) */
+.crown3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    /* lớn hơn avatar để ôm */
+    max-width: none;
+    height: auto;
+    z-index: 50;
+    /* QUAN TRỌNG: cao hơn avatar */
+    pointer-events: none;
+    filter: drop-shadow(0 10px 24px rgba(0, 0, 0, .45));
+}
+
+/* Badge avatar */
+.avatar__badge {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--brand), var(--brand2));
+    border: 1px solid rgba(255, 255, 255, .20);
+    z-index: 60;
+}
+
+/* Right side: KHÔNG stretch để khỏi dài */
+.hero__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    align-items: start;
+    /* đổi từ stretch -> start */
+    align-content: start;
+    grid-auto-rows: min-content;
+    /* cao theo nội dung */
+}
+
+/* Mini: bỏ height:100% để khỏi bị kéo dài */
+.mini {
+    height: auto;
 }
 
 .mini__head {
@@ -532,13 +627,15 @@ html.theme-light #icoMoon {
 }
 
 .mini__title {
-    font-weight: 800;
+    font-weight: 900;
+    padding-left: 6px;
+    margin: 5px 5px;
 }
 
 .mini__badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     font-size: 12px;
     color: var(--muted);
 }
@@ -551,7 +648,7 @@ html.theme-light #icoMoon {
 
 .dot--ok {
     background: #22c55e;
-    box-shadow: 0 0 0 4px rgba(34, 197, 94, .16);
+    box-shadow: none;
 }
 
 .mini__row {
@@ -566,6 +663,7 @@ html.theme-light #icoMoon {
     border-bottom: none;
 }
 
+/* Quick links */
 .quick {
     display: flex;
     align-items: center;
@@ -741,7 +839,6 @@ html.theme-light #icoMoon {
     vertical-align: middle;
 }
 
-
 .timeline__item {
     display: flex;
     gap: 10px;
@@ -799,6 +896,7 @@ html.theme-light #icoMoon {
     gap: 6px;
 }
 
+
 .form__label {
     font-size: 13px;
     color: var(--muted);
@@ -812,6 +910,34 @@ html.theme-light #icoMoon {
     background: var(--panel);
     color: var(--text);
     outline: none;
+}
+
+select.input {
+    background: var(--panel);
+    color: var(--text);
+}
+
+select.input option {
+    background-color: #0b0f19;
+    /* hoặc var(--bg) */
+    color: rgba(255, 255, 255, 0.92);
+}
+
+select.input option:hover,
+select.input option:checked {
+    background-color: rgba(124, 92, 255, 0.35);
+    color: #fff;
+}
+
+html.theme-light select.input option {
+    background-color: #ffffff;
+    color: #595757;
+}
+
+html.theme-light select.input option:hover,
+html.theme-light select.input option:checked {
+    background-color: rgba(91, 92, 255, 0.15);
+    color: #ececec;
 }
 
 .input:focus {
@@ -884,6 +1010,10 @@ html.theme-light #icoMoon {
         grid-template-columns: 1fr;
     }
 
+    .hero__card {
+        grid-template-columns: 1fr;
+    }
+
     .hero__right {
         grid-template-columns: 1fr;
     }
@@ -903,156 +1033,27 @@ html.theme-light #icoMoon {
     }
 
     .hero__left {
-        grid-template-columns: 92px 1fr;
+        grid-template-columns: 110px 1fr;
+        align-items: start;
+    }
+
+    .hero__avatarWrap {
+        width: 110px;
+        height: 110px;
+        margin-left: 0;
     }
 
     .avatar {
-        width: 92px;
-        height: 92px;
+        width: 110px;
+        height: 110px;
+        padding: 5px;
+    }
+
+    .crown3 {
+        width: 150px;
     }
 
     .hero__stats {
         grid-template-columns: 1fr;
-    }
-}
-
-/* --- Verified badge + crown overlay (CongHoan custom) --- */
-.pill--verified .pill__icon {
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-}
-
-/* =========================
-   HERO (clean rewrite)
-   ========================= */
-
-/* card hero không cắt overlay */
-/* 1) Card hero không được cắt overlay (crown) */
-.hero__card,
-.card.hero__card,
-.hero .card {
-    overflow: visible !important;
-}
-
-/* 2) Layout trái */
-.hero__left {
-    display: grid !important;
-    grid-template-columns: 190px 1fr !important;
-    gap: 18px !important;
-    align-items: center !important;
-}
-
-.hero__meta {
-    min-width: 0;
-}
-
-/* 3) Wrapper avatar (nếu có) */
-.hero__avatarWrap {
-    width: 170px;
-    height: 170px;
-    position: relative !important;
-    display: block;
-    overflow: visible !important;
-}
-
-/* 4) Avatar (ăn được dù có wrap hay không) */
-.avatar {
-    width: 170px !important;
-    height: 170px !important;
-    border-radius: 999px !important;
-    border: 1px solid var(--border) !important;
-    background: var(--panel2) !important;
-    padding: 7px !important;
-    position: relative !important;
-    display: grid !important;
-    place-items: center !important;
-    overflow: visible !important;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, .45) !important;
-}
-
-.avatar img {
-    width: 100% !important;
-    height: 100% !important;
-    border-radius: 999px !important;
-    object-fit: cover !important;
-    display: block !important;
-}
-
-/* badge góc phải dưới */
-.avatar__badge {
-    position: absolute !important;
-    right: 6px !important;
-    bottom: 6px !important;
-    width: 38px !important;
-    height: 38px !important;
-    border-radius: 999px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: linear-gradient(135deg, var(--brand), var(--brand2)) !important;
-    border: 1px solid rgba(255, 255, 255, .20) !important;
-    z-index: 60 !important;
-}
-
-/* 5) CROWN: selector phủ mọi trường hợp (nằm trong wrap hoặc nằm trong avatar) */
-.crown3,
-.hero__avatarWrap .crown3,
-.avatar .crown3 {
-    position: absolute !important;
-    left: 50% !important;
-    top: -22px !important;
-    transform: translateX(-50%) !important;
-    width: 110px !important;
-    height: auto !important;
-    z-index: 80 !important;
-    pointer-events: none !important;
-    filter: drop-shadow(0 12px 26px rgba(0, 0, 0, .45)) !important;
-}
-
-/* 6) Right side (Status + Quick Links) */
-.hero__right {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 14px !important;
-    margin-top: 16px !important;
-    align-items: stretch !important;
-}
-
-.hero__right>.mini {
-    height: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-}
-
-/* 7) Responsive */
-@media (max-width: 860px) {
-    .hero__right {
-        grid-template-columns: 1fr !important;
-    }
-}
-
-@media (max-width: 720px) {
-    .hero__left {
-        grid-template-columns: 92px 1fr !important;
-        align-items: start !important;
-    }
-
-    .hero__avatarWrap {
-        width: 92px !important;
-        height: 92px !important;
-    }
-
-    .avatar {
-        width: 92px !important;
-        height: 92px !important;
-        padding: 5px !important;
-    }
-
-    .crown3,
-    .hero__avatarWrap .crown3,
-    .avatar .crown3 {
-        width: 76px !important;
-        top: -16px !important;
     }
 }
