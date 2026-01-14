@@ -1,0 +1,87 @@
+@import url("../main.css?v=1");
+
+/* Contact page dùng form__input thay vì .input (base) */
+.form__input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text);
+    outline: none;
+}
+
+.form__input:focus {
+    border-color: color-mix(in srgb, var(--brand2) 35%, var(--border));
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand2) 16%, transparent);
+}
+
+/* Chip button (Contact dùng chip--btn) */
+.chip--btn {
+    cursor: pointer;
+    transition: .18s ease;
+}
+
+.chip--btn:hover {
+    color: var(--text);
+    background: var(--panel);
+    transform: translateY(-1px);
+}
+
+/* Payment layout (Contact dùng .pay*) */
+.pay {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 14px;
+    align-items: start;
+}
+
+.pay__qr {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    object-fit: cover;
+}
+
+.pay__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pay__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pay__row b {
+    font-family: var(--mono);
+}
+
+/* Mobile payment stack */
+@media (max-width: 720px) {
+    .pay {
+        grid-template-columns: 1fr;
+    }
+
+    .pay__qr {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+/* Burger class khác chuẩn */
+.icon-btn--burger {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .icon-btn--burger {
+        display: inline-flex;
+    }
+}

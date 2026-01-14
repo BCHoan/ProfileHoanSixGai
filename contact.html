@@ -11,13 +11,16 @@
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/main.css?v=1" />
+  <link rel="stylesheet" href="./assets/css/pages/contact.css?v=1" />
   <link rel="stylesheet" href="./assets/css/cursor/main.css?v=1" />
+
 </head>
 
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
 
+  <!-- Topbar (MATCH INDEX) -->
   <header class="topbar" id="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="./index.html">
@@ -35,32 +38,33 @@
 
         <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">
           <i class="ri-sun-line" id="icoSun"></i>
-          <i class="ri-moon-line" id="icoMoon"></i>
+          <i class="ri-moon-clear-line" id="icoMoon"></i>
         </button>
 
-        <button class="icon-btn icon-btn--burger" id="burgerBtn" type="button" aria-label="Open menu">
+        <button class="icon-btn nav__burger" id="burgerBtn" type="button" aria-label="Open menu">
           <i class="ri-menu-3-line"></i>
         </button>
       </nav>
+    </div>
 
-      <div class="drawer" id="drawer" aria-hidden="true">
-        <div class="drawer__panel">
-          <div class="drawer__head">
-            <div class="drawer__title">Menu</div>
-            <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Close menu">
-              <i class="ri-close-line"></i>
-            </button>
-          </div>
-          <div class="drawer__links">
-            <a href="./about.html" class="drawer__link">About</a>
-            <a href="./skills.html" class="drawer__link">MySkill</a>
-            <a href="./job.html" class="drawer__link">Job</a>
-            <a href="./community.html" class="drawer__link">Community</a>
-            <a href="./contact.html" class="drawer__link drawer__link--cta">Contact</a>
-          </div>
+    <!-- Drawer (MATCH INDEX) -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="drawer__head">
+          <div class="drawer__title">Menu</div>
+          <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Close menu">
+            <i class="ri-close-line"></i>
+          </button>
         </div>
-        <div class="drawer__backdrop" id="drawerBackdrop" tabindex="-1"></div>
+        <div class="drawer__links">
+          <a href="./about.html" class="drawer__link">About</a>
+          <a href="./skills.html" class="drawer__link">MySkill</a>
+          <a href="./job.html" class="drawer__link">Job</a>
+          <a href="./community.html" class="drawer__link">Community</a>
+          <a href="./contact.html" class="drawer__link drawer__link--cta">Contact</a>
+        </div>
       </div>
+      <div class="drawer__backdrop" id="drawerBackdrop" tabindex="-1"></div>
     </div>
   </header>
 
@@ -70,11 +74,10 @@
         <div>
           <div class="breadcrumbs">
             <a href="./index.html">Home</a>
-            <i class="ri-arrow-right-s-line"></i>
+            <span>›</span>
             <span>Contact</span>
           </div>
-          <h1 class="page-title">Contact</h1>
-          <p class="page-subtitle">Email, SĐT, Location + thanh toán. Thiết kế tối ưu: dễ copy, ít thao tác.</p>
+          <h1 class="page-title">Contact Me</h1>
         </div>
       </div>
     </section>
@@ -82,71 +85,82 @@
     <section class="section">
       <div class="section__head">
         <h2 class="section__title">Thông tin liên hệ</h2>
-        <p class="section__desc">Bấm vào dòng có icon copy để sao chép nhanh.</p>
       </div>
 
       <div class="grid grid--2">
         <div class="card">
-          <div class="card__head"><h3 class="card__title"><i class="ri-contacts-book-2-line"></i> Contact Card</h3></div>
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-contacts-book-2-line"></i> Contact Card</h3>
+          </div>
           <div class="card__body">
             <div class="kv">
               <div class="kv__row">
                 <div class="kv__k"><i class="ri-mail-line"></i> Email</div>
-                <div class="kv__v">
-                  <span id="emailVal">hoandeptrai61@gmail.com</span>
-                  <button class="chip chip--btn" type="button" data-copy="#emailVal"><i class="ri-file-copy-2-line"></i> Copy</button>
+                <div class="kv__v mono">
+                  <span id="emailVal">Hoandeptrai61@gmail.com</span>
+                  <button class="mini-btn" type="button" data-copy="#emailVal"><i
+                      class="ri-file-copy-2-line"></i></button>
                 </div>
               </div>
               <div class="kv__row">
                 <div class="kv__k"><i class="ri-phone-line"></i> SĐT</div>
-                <div class="kv__v">
+                <div class="kv__v mono">
                   <span id="phoneVal">+84 395 134 812</span>
-                  <button class="chip chip--btn" type="button" data-copy="#phoneVal"><i class="ri-file-copy-2-line"></i> Copy</button>
+                  <button class="mini-btn" type="button" data-copy="#phoneVal"><i
+                      class="ri-file-copy-2-line"></i></button>
                 </div>
               </div>
               <div class="kv__row">
                 <div class="kv__k"><i class="ri-map-pin-2-line"></i> Location</div>
-                <div class="kv__v"><span id="locVal">Việt Nam</span></div>
+                <div class="kv__v"><span id="locVal">Việt Nam — Thái Bình City</span></div>
               </div>
               <div class="kv__row">
                 <div class="kv__k"><i class="ri-github-fill"></i> GitHub</div>
-                <div class="kv__v"><a class="link" href="https://github.com/BCHoan" target="_blank" rel="noreferrer">github.com/BCHoan</a></div>
+                <div class="kv__v">
+                  <a class="link" href="https://github.com/BCHoan" target="_blank" rel="noreferrer">GitHub em Hoan
+                    nè</a>
+                </div>
               </div>
             </div>
 
             <div class="hero__actions" style="margin-top: 14px;">
-              <a class="btn btn--primary" href="mailto:hoandeptrai61@gmail.com"><i class="ri-mail-send-line"></i> Gửi Email</a>
+              <a class="btn btn--primary" href="mailto:hoandeptrai61@gmail.com"><i class="ri-mail-send-line"></i> Gửi
+                Email</a>
               <a class="btn btn--ghost" href="tel:+84395134812"><i class="ri-phone-line"></i> Gọi</a>
               <a class="btn btn--ghost" href="./community.html"><i class="ri-group-line"></i> Vào box</a>
             </div>
 
-            <div class="muted" style="margin-top: 10px;">Gợi ý: thay email/sđt/location trong file này là xong.</div>
+            <div class="muted" style="margin-top: 10px; margin-left: 10px;">Gợi í Bấm Copy để sao chép nhanh</div>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card__head"><h3 class="card__title"><i class="ri-message-3-line"></i> Gửi yêu cầu (Copy-template)</h3></div>
+        <div class="card card--soft">
+          <div class="card__head">
+            <h3 class="card__title"><i class="ri-chat-1-line"></i> Gửi yêu cầu</h3>
+          </div>
           <div class="card__body">
             <form class="form" id="contactForm">
               <div class="form__row">
-                <label class="form__label">Tên / Nick</label>
-                <input class="form__input" name="name" type="text" placeholder="VD: BCHoan" />
+                <label class="form__label">Tên</label>
+                <input class="input" name="name" placeholder="Bạn tên gì?" autocomplete="name" />
               </div>
               <div class="form__row">
-                <label class="form__label">Dịch vụ</label>
-                <select class="form__input" name="service">
-                  <option value="">Chọn...</option>
-                  <option value="SRC Game">SRC Game (NRO)</option>
-                  <option value="Web">Web (Landing/CRUD)</option>
+                <label class="form__label">Nhu cầu</label>
+                <select class="input" name="service">
+                  <option value="Fix bug">Fix bug</option>
+                  <option value="Web">Web</option>
                   <option value="Bot Zalo">Bot Zalo</option>
+                  <option value="SRC game">SRC game</option>
                 </select>
               </div>
               <div class="form__row">
                 <label class="form__label">Nội dung</label>
-                <textarea class="form__input" name="message" rows="4" placeholder="Mô tả yêu cầu + ngân sách + deadline..."></textarea>
+                <textarea class="input" name="message" rows="4"
+                  placeholder="Mô tả ngắn: yêu cầu + deadline + ngân sách dự kiến"></textarea>
               </div>
-              <button class="btn btn--primary" type="submit"><i class="ri-file-copy-2-line"></i> Tạo & Copy nội dung</button>
-              <div class="muted" style="margin-top: 10px;">Form này không gửi đi mạng. Nó tạo template và copy để bạn dán vào Zalo/Email.</div>
+              <button class="btn btn--primary" type="submit">
+                <i class="ri-send-plane-2-line"></i> Tạo tin nhắn (copy)
+              </button>
             </form>
           </div>
         </div>
@@ -156,47 +170,71 @@
     <section class="section" id="payment">
       <div class="section__head">
         <h2 class="section__title">Payment</h2>
-        <p class="section__desc">Thay QR + thông tin tài khoản sau khi bạn gửi zip (hoặc bạn tự thay file ảnh).</p>
+        <p class="section__desc">Dự án Nuôi em Hoan ở đây nè ^^</p>
       </div>
 
       <div class="grid grid--2">
-        <div class="card">
+        <div class="card card--soft">
           <div class="card__head">
             <h3 class="card__title"><i class="ri-bank-line"></i> Techcombank</h3>
           </div>
           <div class="card__body">
-            <div class="pay">
-              <img src="./assets/img/qrtech.jpg" alt="QR Techcombank" class="pay__qr" onerror="this.src='./assets/img/avatar.png'" />
-              <div class="pay__meta">
-                <div class="pay__row"><span class="muted">Chủ TK</span> <b id="techName">Bùi Công Hoan</b></div>
-                <div class="pay__row"><span class="muted">STK</span> <b id="techAcc">612006888888</b>
-                  <button class="chip chip--btn" type="button" data-copy="#techAcc"><i class="ri-file-copy-2-line"></i> Copy</button>
+            <div class="kv">
+              <div class="kv__row">
+                <div class="kv__k">STK</div>
+                <div class="kv__v mono">
+                  <span id="techAcc">612006888888</span>
+                  <button class="mini-btn" data-copy="#techAcc"><i class="ri-file-copy-2-line"></i></button>
                 </div>
-                <div class="pay__row"><span class="muted">Nội dung</span> <b id="payNote">CongHoan</b>
-                  <button class="chip chip--btn" type="button" data-copy="#payNote"><i class="ri-file-copy-2-line"></i> Copy</button>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k">Chủ TK</div>
+                <div class="kv__v">Bùi Công Hoan</div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k">Nội dung</div>
+                <div class="kv__v mono">
+                  <span id="techNote">CONGHOAN - DEPTRAI</span>
+                  <button class="mini-btn" data-copy="#techNote"><i class="ri-file-copy-2-line"></i></button>
                 </div>
-                <div class="muted">Bấm Copy để sao chép nhanh.</div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__v mono">
+                  <span><img src="assets/img/icon/qrtech.jpg" alt=""></span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card--soft">
           <div class="card__head">
-            <h3 class="card__title"><i class="ri-bank-line"></i> MBBank</h3>
+            <h3 class="card__title"><i class="ri-bank-card-line"></i> MBBank</h3>
           </div>
           <div class="card__body">
-            <div class="pay">
-              <img src="./assets/img/qrmbb.jpg" alt="QR MBBank" class="pay__qr" onerror="this.src='./assets/img/avatar.png'" />
-              <div class="pay__meta">
-                <div class="pay__row"><span class="muted">Chủ TK</span> <b id="mbName">Bùi Công Hoan</b></div>
-                <div class="pay__row"><span class="muted">STK</span> <b id="mbAcc">61200688888</b>
-                  <button class="chip chip--btn" type="button" data-copy="#mbAcc"><i class="ri-file-copy-2-line"></i> Copy</button>
+            <div class="kv">
+              <div class="kv__row">
+                <div class="kv__k">STK</div>
+                <div class="kv__v mono">
+                  <span id="mbAcc">61200688888</span>
+                  <button class="mini-btn" data-copy="#mbAcc"><i class="ri-file-copy-2-line"></i></button>
                 </div>
-                <div class="pay__row"><span class="muted">Nội dung</span> <b id="payNote2">CongHoan</b>
-                  <button class="chip chip--btn" type="button" data-copy="#payNote2"><i class="ri-file-copy-2-line"></i> Copy</button>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k">Chủ TK</div>
+                <div class="kv__v">Bùi Công Hoan</div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__k">Nội dung</div>
+                <div class="kv__v mono">
+                  <span id="mbNote">CONGHOAN - DEV</span>
+                  <button class="mini-btn" data-copy="#mbNote"><i class="ri-file-copy-2-line"></i></button>
                 </div>
-                <div class="muted">Bấm Copy để sao chép nhanh.</div>
+              </div>
+              <div class="kv__row">
+                <div class="kv__v mono">
+                  <span><img src="assets/img/icon/qrmbb.jpg" alt=""></span>
+                </div>
               </div>
             </div>
           </div>

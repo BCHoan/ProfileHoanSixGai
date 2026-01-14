@@ -9,19 +9,18 @@
   <meta name="description" content="Community – Box Zalo, cập nhật src & fix." />
   <meta name="theme-color" content="#0b0f19" />
 
-  <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/main.css?v=1" />
+  <link rel="stylesheet" href="./assets/css/pages/community.css?v=1" />
   <link rel="stylesheet" href="./assets/css/cursor/main.css?v=1" />
+
 </head>
 
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
 
-  <!-- Topbar -->
+  <!-- Topbar (MATCH INDEX) -->
   <header class="topbar" id="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="./index.html">
@@ -42,19 +41,20 @@
           <i class="ri-moon-clear-line" id="icoMoon"></i>
         </button>
 
-        <button class="icon-btn burger" id="burgerBtn" type="button" aria-label="Open menu">
+        <button class="icon-btn nav__burger" id="burgerBtn" type="button" aria-label="Open menu">
           <i class="ri-menu-3-line"></i>
         </button>
       </nav>
     </div>
 
-    <!-- Drawer (mobile) -->
+    <!-- Drawer (MATCH INDEX) -->
     <div class="drawer" id="drawer" aria-hidden="true">
-      <div class="drawer__panel">
+      <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
         <div class="drawer__head">
           <div class="drawer__title">Menu</div>
-          <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Close menu"><i
-              class="ri-close-line"></i></button>
+          <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Close menu">
+            <i class="ri-close-line"></i>
+          </button>
         </div>
         <div class="drawer__links">
           <a href="./about.html" class="drawer__link">About</a>
@@ -72,12 +72,12 @@
     <div class="page-head">
       <div class="page-head__inner">
         <div>
-          <div class="breadcrumbs"><a href="./index.html">Home</a> <span class="muted">/</span> Community</div>
+          <div class="breadcrumbs"><a href="./index.html">Home</a> <span>›</span> <span>Community</span></div>
           <h1 class="page-title">Community</h1>
-          <p class="page-subtitle">Box Zalo để trao đổi src, fix bug, share tip – và nhận update nhanh.</p>
+          <p class="page-subtitle">Box Zalo để trao đổi – và nhận update nhanh.</p>
         </div>
         <div class="pill" title="Online status">
-          <span class="dot dot--on"></span>
+          <span class="dot dot--ok"></span>
           <span class="muted">Online</span>
         </div>
       </div>
@@ -90,65 +90,62 @@
             <h3 class="card__title"><i class="ri-chat-3-line"></i> Box Zalo</h3>
           </div>
           <div class="card__body">
-            <p class="muted">Dán link box vào đây. Mọi người vào để cập nhật bản fix, tool, event và trao đổi kỹ thuật.</p>
+            <p class="muted">Tham gia box để hỏi đáp, chia sẻ SRC/bugfix, cập nhật project.</p>
 
             <div class="kv" style="margin-top: 12px;">
               <div class="kv__row">
-                <div class="kv__k">Tên box</div>
-                <div class="kv__v"><b>CongHoan Dev</b></div>
+                <div class="kv__k">Chủ box</div>
+                <div class="kv__v"><b>Hoan</b></div>
               </div>
               <div class="kv__row">
                 <div class="kv__k">Link</div>
-                <div class="kv__v">
-                  <span id="zaloBoxLink">https://zalo.me/g/your-box</span>
-                  <button class="btn btn--ghost" data-copy="#zaloBoxLink" style="margin-left: 10px;">
-                    <i class="ri-file-copy-2-line"></i> Copy
+                <div class="kv__v mono" style="display:flex;align-items:center;gap:10px;justify-content:flex-end;">
+                  <div class="kv__v"><a class="link" href="https://zalo.me/g/qoxazb736" id="zaloBoxLink" target="_blank"
+                      rel="noreferrer">https://zalo.me/g/qoxazb736</a></div>
+                  <button class="mini-btn" data-copy="#zaloBoxLink" type="button" aria-label="Copy">
+                    <i class="ri-file-copy-2-line"></i>
                   </button>
                 </div>
               </div>
             </div>
 
-            <div class="callout card card--soft" style="margin-top: 16px;">
-              <div class="callout__left">
-                <div class="callout__title">Quy ước nhanh</div>
-                <div class="muted">Không spam, không quảng cáo; hỏi rõ yêu cầu + ảnh/log để dễ hỗ trợ.</div>
-              </div>
+            <div class="note">
+              <i class="ri-shield-check-line" style="padding-top: 3px;"></i> Nội quy: không spam, không leak data, tôn trọng lẫn nhau.
             </div>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card--soft">
           <div class="card__head">
-            <h3 class="card__title"><i class="ri-notification-3-line"></i> Update</h3>
+            <h3 class="card__title"><i class="ri-megaphone-line"></i> Update</h3>
           </div>
           <div class="card__body">
             <div class="timeline">
-              <div class="titem">
-                <div class="titem__dot"></div>
+              <div class="timeline__item">
+                <div class="timeline__dot"></div>
                 <div>
-                  <div class="titem__title">UI/UX Profile</div>
-                  <div class="muted">Tối ưu multi-page + đường dẫn assets chuẩn.</div>
+                  <div class="timeline__title">Em Hoan bán SRC NRO</div>
+                  <div class="muted">Đã Fix Full + hướng dẫn setup.</div>
                 </div>
               </div>
-              <div class="titem">
-                <div class="titem__dot"></div>
+              <div class="timeline__item">
+                <div class="timeline__dot"></div>
                 <div>
-                  <div class="titem__title">Bot Zalo</div>
-                  <div class="muted">Anti-link/anti-spam, welcome card, mini game.</div>
+                  <div class="timeline__title">Bot Zalo quản trị + mini-game</div>
+                  <div class="muted">Anti-link, anti-spam, pr welcome card, đa dạng.</div>
                 </div>
               </div>
-              <div class="titem">
-                <div class="titem__dot"></div>
+              <div class="timeline__item">
+                <div class="timeline__dot"></div>
                 <div>
-                  <div class="titem__title">Java server (NRO)</div>
-                  <div class="muted">Combine/NPC/Item logic, fix crash & perf.</div>
+                  <div class="timeline__title">Web Game</div>
+                  <div class="muted">Gọn – nhanh – tối ưu trải nghiệm – Auto Bank.</div>
                 </div>
               </div>
             </div>
-
-            <div class="muted" style="margin-top: 12px;">Bạn có thể thêm “changelog” thật ở đây, hoặc gắn link GitHub.</div>
           </div>
         </div>
+
       </div>
     </section>
 

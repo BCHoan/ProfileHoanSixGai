@@ -9,11 +9,9 @@
   <meta name="description" content="About Bùi Công Hoan – Dev NRO, Bot Zalo, Web Developer." />
   <meta name="theme-color" content="#0b0f19" />
 
-  <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/main.css?v=1" />
+  <link rel="stylesheet" href="./assets/css/pages/about.css?v=1" />
   <link rel="stylesheet" href="./assets/css/cursor/main.css?v=1" />
 </head>
 
@@ -21,7 +19,7 @@
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
 
-  <!-- Topbar -->
+  <!-- Topbar (MATCH INDEX) -->
   <header class="topbar" id="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="./index.html">
@@ -48,7 +46,7 @@
       </nav>
     </div>
 
-    <!-- Mobile drawer -->
+    <!-- Drawer (MATCH INDEX) -->
     <div class="drawer" id="drawer" aria-hidden="true">
       <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
         <div class="drawer__head">
@@ -70,6 +68,7 @@
   </header>
 
   <main class="container" id="top">
+    <!-- Page head -->
     <section class="page-head">
       <div class="page-head__inner">
         <div>
@@ -78,96 +77,158 @@
             <span>›</span>
             <span>About</span>
           </div>
-          <h1 class="page-title">About</h1>
-          <p class="page-subtitle">Giới thiệu ngắn gọn, rõ giá trị, tập trung vào thứ bạn làm tốt nhất.</p>
+          <h1 class="page-title">About Me</h1>
         </div>
         <a class="btn btn--ghost" href="./contact.html"><i class="ri-send-plane-2-line"></i> Liên hệ</a>
       </div>
     </section>
 
-    <section class="section">
-      <div class="grid grid--2">
-        <div class="card">
-          <div class="card__head">
-            <h2 class="card__title"><i class="ri-user-3-line"></i> Mình là ai</h2>
-          </div>
-          <div class="card__body">
-            <div class="hero__left" style="gap:14px;align-items:flex-start;">
-              <div class="avatar" style="width:78px;height:78px;">
+    <!-- ROW 1: HERO (KHÔNG BỌC 1 CARD TO ÔM CẢ HÀNG) -->
+    <section class="section about-stack" aria-label="About hero">
+      <div class="card about-card">
+        <div class="card__head">
+          <h2 class="card__title"><i class="ri-user-3-line"></i> Mình là Bùi Công Hoan</h2>
+        </div>
+
+        <div class="card__body">
+          <div class="about-hero">
+            <!-- Avatar center + crown wrap -->
+            <div class="about-avatarWrap">
+              <div class="avatar about-avatar">
                 <img src="./assets/img/avataroke.jpg" alt="Bùi Công Hoan" />
-                <img class="avatar__crown" src="./assets/img/mong-vuot-rong.png" alt="" aria-hidden="true" />
-                <img class="avatar__crown" src="./assets/img/mong-vuot-rong.png" alt="" aria-hidden="true" />
                 <span class="avatar__badge" title="Coder Mode"><i class="ri-code-s-slash-line"></i></span>
               </div>
-              <div style="flex:1;min-width:0;">
-                <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-                  <h3 style="margin:0;">Bùi Công Hoan</h3>
-                  <span class="pill pill--verified"><img src="./assets/img/icon/tick.png" alt="Verified"
-                      class="pill__icon" /></span>
+              <img class="about-crown" src="./assets/img/mong-vuot-rong.png" alt="Móng vuốt rồng" />
+            </div>
+
+            <!-- Name -->
+            <h3 class="about-name">
+              Bùi Công Hoan
+              <span class="pill pill--verified">
+                <img src="./assets/img/icon/tick.png" alt="Verified" class="pill__icon" />
+              </span>
+            </h3>
+
+            <div class="about-role muted">
+              <i class="ri-computer-line"></i>
+              Dev NRO • Fix Bug • Bot Zalo • Web Developer
+            </div>
+
+            <div class="about-divider" aria-hidden="true"></div>
+
+            <!-- Caption kiểu ảnh 2 -->
+            <div class="about-caption">
+              <p class="about-quote">
+                “Code không bug thì không phải code mình viết.” <span class="muted">— Hoan, 5 minutes ago</span>
+              </p>
+
+              <div class="about-fun muted">
+                <div><b style="color: red;">Tình huống hằng ngày của Hoan</b></div>
+                <div>Khách hỏi : “Code nó không chạy!”</div>
+                <div>Hoan : “Ủa??? Trên máy tôi chạy phà phà mà 😳”</div>
+                <div>Chắc bug không thích môi trường của anh thôi!</div>
+              </div>
+
+              <div class="about-lines">
+                <div>Though I am ordinary among many.</div>
+                <div><b>I am still the one and only in this world!</b></div>
+                <div class="muted" style="margin-top:8px;">
+                  Dù tôi bình thường giữa muôn vàn người.<br />
+                  Tôi vẫn là duy nhất trên thế gian này!
                 </div>
-                <p class="muted" style="margin:8px 0 0;">
-                  Dev NRO • Bot Zalo • Web Developer — “Code không bug thì không phải code mình viết.”
-                </p>
               </div>
             </div>
 
-            <div class="list" style="margin-top:14px;">
-              <div class="list__item"><i class="ri-check-line"></i> Tập trung backend logic (Java game server) +
+            <div class="list about-list" style="padding-left: 220px;">
+              <div class="list__item"><i class="ri-check-line"></i> Backend Logic (Java Server) +
                 automation/bot (Node.js) + web (PHP/JS).</div>
-              <div class="list__item"><i class="ri-check-line"></i> Ưu tiên flow rõ, validate rõ, log dễ trace, tối ưu
-                chỗ “đau”.</div>
-              <div class="list__item"><i class="ri-check-line"></i> Giao diện gọn, thao tác nhanh, tối ưu trải nghiệm
-                người dùng.</div>
+              <div class="list__item"><i class="ri-check-line"></i> Flow rõ, validate rõ, log dễ trace, tối ưu mọi
+                thứ....
+              </div>
+              <div class="list__item"><i class="ri-check-line"></i> UI gọn, thao tác nhanh, tối ưu trải nghiệm người
+                dùng.
+              </div>
             </div>
 
-            <div class="tagset" style="margin-top:12px;">
+            <div class="tagset about-tags">
               <span class="tag">Java</span>
               <span class="tag">Node.js</span>
               <span class="tag">PHP</span>
               <span class="tag">MySQL</span>
               <span class="tag">UI/UX</span>
             </div>
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="card__head">
-            <h2 class="card__title"><i class="ri-contacts-book-2-line"></i> Thông tin</h2>
-          </div>
-          <div class="card__body">
-            <div class="kv">
-              <div class="kv__row">
-                <div class="kv__k"><i class="ri-map-pin-2-line"></i> Location</div>
-                <div class="kv__v">Việt Nam</div>
-              </div>
-              <div class="kv__row">
-                <div class="kv__k"><i class="ri-mail-line"></i> Email</div>
-                <div class="kv__v"><b class="copy" data-copy="hoandeptrai61@gmail.com">hoandeptrai61@gmail.com</b></div>
-              </div>
-              <div class="kv__row">
-                <div class="kv__k"><i class="ri-phone-line"></i> SĐT</div>
-                <div class="kv__v"><b class="copy" data-copy="+84395134812">+84 395 134 812</b></div>
-              </div>
-              <div class="kv__row">
-                <div class="kv__k"><i class="ri-github-fill"></i> GitHub</div>
-                <div class="kv__v"><a class="link" href="https://github.com/BCHoan" target="_blank"
-                    rel="noreferrer">github.com/BCHoan</a></div>
-              </div>
-            </div>
-
-            <div class="callout card card--soft" style="margin-top:14px;">
-              <div class="callout__left">
-                <div class="callout__title">Tip</div>
-                <div class="muted">Đổi email/sđt/location ở trang Contact để dùng chung toàn site.</div>
-              </div>
+            <div class="about-ctaRow">
               <a class="btn btn--primary" href="./contact.html"><i class="ri-send-plane-2-line"></i> Contact</a>
+              <a class="btn btn--ghost" href="./job.html"><i class="ri-briefcase-2-line"></i> Xem dịch vụ</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <section class="section about-stack" aria-label="Info">
+      <div class="card">
+        <div class="card__head">
+          <h2 class="card__title"><i class="ri-contacts-book-2-line"></i> Thông tin</h2>
+        </div>
+        <div class="card__body">
+          <div class="kv">
+            <div class="kv__row">
+              <div class="kv__k"><i class="ri-map-pin-2-line"></i> Location</div>
+              <div class="kv__v">Việt Nam — Thái Bình City</div>
+            </div>
+            <div class="kv__row">
+              <div class="kv__k"><i class="ri-mail-line"></i> Email</div>
+              <div class="kv__v">
+                <a href="mailto:hoandeptrai61@gmail.com" class="link">Hoandeptrai61@gmail.com</a>
+              </div>
+            </div>
+            <div class="kv__row">
+              <div class="kv__k"><i class="ri-phone-line"></i> SĐT</div>
+              <div class="kv__v"><a href="tel:+84395134812" class="link">+84 395 134 812</a></div>
+            </div>
+            <div class="kv__row">
+              <div class="kv__k"><i class="ri-github-fill"></i> GitHub</div>
+              <div class="kv__v">
+                <a class="link" href="https://github.com/BCHoan" target="_blank" rel="noreferrer">Github.com/BCHoan</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-copyRow">
+            <button class="btn btn--ghost" type="button" data-copy="hoandeptrai61@gmail.com">
+              <i class="ri-file-copy-line"></i> Copy Email
+            </button>
+            <button class="btn btn--ghost" type="button" data-copy="+84395134812">
+              <i class="ri-file-copy-line"></i> Copy SĐT
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section about-stack" aria-label="Pictures">
+      <div class="section__head">
+        <h2 class="section__title">Picture</h2>
+      </div>
+
+      <div class="card">
+        <div class="card__body">
+          <div class="about-gallery">
+            <a class="about-photo" href="./assets/img/nen1.jpg" target="_blank" rel="noreferrer">
+              <img src="./assets/img/nen1.jpg" alt="Hoan1" />
+            </a>
+            <a class="about-photo" href="./assets/img/nen2.jpg" target="_blank" rel="noreferrer">
+              <img src="./assets/img/nen2.jpg" alt="Hoan2" />
+            </a>
+            <a class="about-photo" href="./assets/img/nen3.jpg" target="_blank" rel="noreferrer">
+              <img src="./assets/img/nen3.jpg" alt="Hoan3" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer__inner card card--soft">
         <div class="footer__left">
@@ -181,6 +242,23 @@
   </main>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    document.addEventListener("click", async (e) => {
+      const btn = e.target.closest("[data-copy]");
+      if (!btn) return;
+      const text = btn.getAttribute("data-copy") || "";
+      try {
+        await navigator.clipboard.writeText(text);
+        const toast = document.getElementById("toast");
+        if (toast) {
+          toast.textContent = "Copied: " + text;
+          toast.classList.add("is-show");
+          setTimeout(() => toast.classList.remove("is-show"), 1800);
+        }
+      } catch { }
+    });
+  </script>
+
   <script src="./assets/js/main.js?v=1" defer></script>
 </body>
 

@@ -1,0 +1,169 @@
+@import url("../main.css?v=1");
+
+/* =========================
+   JOB PAGE – POLISH
+   ========================= */
+
+/* 1) Header row (title + available pill) */
+.page-head__inner {
+    align-items: flex-end;
+}
+
+.page-title {
+    font-size: clamp(24px, 4vw, 38px);
+}
+
+.pill {
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--panel) 70%, transparent);
+    color: var(--muted);
+    padding: 8px 12px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pill i {
+    color: color-mix(in srgb, var(--brand2) 70%, var(--text));
+}
+
+/* 2) Grid cards: đồng đều chiều cao, spacing chuẩn */
+.grid--3 {
+    gap: 14px;
+}
+
+.grid--3>.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    /* làm 3 card “đã mắt” hơn */
+}
+
+/* header card tinh gọn */
+.grid--3 .card__head {
+    padding: 14px 16px;
+}
+
+.grid--3 .card__title {
+    font-size: 15px;
+}
+
+/* body card: canh layout */
+.grid--3 .card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px 16px;
+}
+
+/* mô tả: clamp dòng để card đều */
+.grid--3 .card__body .muted {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 3) Media preview (ảnh giống “thumbnail” trong mẫu) */
+.job-media {
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--panel2) 70%, transparent);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+}
+
+.job-media img {
+    width: 100%;
+    height: 190px;
+    /* cố định chiều cao preview */
+    object-fit: cover;
+    /* không méo */
+    display: block;
+    filter: saturate(1.02) contrast(1.02);
+}
+
+/* Nếu bạn không đổi HTML sang .job-media, vẫn cứu ảnh bằng selector này */
+.grid--3 .card__body>p>img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--panel2) 70%, transparent);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+}
+
+/* 4) Tagset: đẩy xuống đáy card + style “chip” đẹp */
+.tagset {
+    margin-top: auto;
+    /* đẩy tag xuống đáy => card nhìn gọn */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tagset .tag {
+    background: color-mix(in srgb, var(--panel) 70%, transparent);
+}
+
+/* 5) Khối dưới: spacing + nhìn “dashboard” hơn */
+.grid--2 {
+    gap: 14px;
+}
+
+/* Cam kết (kv) nhìn giống list row trong mẫu */
+.kv__row {
+    align-items: center;
+}
+
+.kv__k {
+    min-width: 92px;
+    font-weight: 700;
+}
+
+.kv__v {
+    color: var(--text);
+}
+
+/* 6) Callout cuối: giống thanh “Đặt hàng / Fix bug” ở mẫu */
+.callout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 16px 18px;
+    border-radius: 22px;
+}
+
+.callout__left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.callout__title {
+    font-weight: 900;
+    letter-spacing: .2px;
+}
+
+/* 7) Responsive: card không quá cao trên mobile */
+@media (max-width: 860px) {
+    .grid--3>.card {
+        min-height: auto;
+    }
+
+    .job-media img,
+    .grid--3 .card__body>p>img {
+        height: 210px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .job-media img,
+    .grid--3 .card__body>p>img {
+        height: 200px;
+    }
+}

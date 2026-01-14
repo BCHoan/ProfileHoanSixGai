@@ -1,0 +1,56 @@
+@import url("../main.css?v=1");
+
+/* Community page: dot online (đang dùng dot--on nhưng base chỉ có dot--ok) */
+.dot--on {
+    background: #22c55e;
+    box-shadow: 0 0 0 6px rgba(34, 197, 94, .12);
+}
+
+/* Timeline variant: community đang dùng .titem* thay vì .timeline__item* */
+.titem {
+    display: flex;
+    gap: 10px;
+}
+
+.titem__dot {
+    width: 10px;
+    height: 10px;
+    margin-top: 6px;
+    border-radius: 999px;
+    background: var(--brand2);
+    box-shadow: 0 0 0 6px rgba(45, 212, 191, .12);
+}
+
+.titem__title {
+    font-weight: 900;
+}
+
+/* Callout cuối trang */
+.callout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 16px;
+}
+
+.callout__left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.callout__title {
+    font-weight: 900;
+}
+
+/* Burger class khác chuẩn */
+.burger {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .burger {
+        display: inline-flex;
+    }
+}

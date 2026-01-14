@@ -1,0 +1,32 @@
+@import url("../main.css?v=1");
+
+/* Skills page đang dùng .skill__row / .skill__val khác với base (.skill__top / .skill__pct) */
+.skill__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skill__val {
+    color: var(--muted);
+    font-family: var(--mono);
+}
+
+/* Tagset dùng ở khối "Tech stack" */
+.tagset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Burger button class khác chuẩn (skills dùng .burger) -> map cho đúng responsive */
+.burger {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .burger {
+        display: inline-flex;
+    }
+}
