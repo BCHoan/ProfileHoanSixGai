@@ -1,0 +1,208 @@
+@import url("../main.css?v=1");
+
+/* =========================
+   ABOUT PAGE – STACK VERTICAL
+   1) HERO
+   2) INFO
+   3) PICTURES
+   ========================= */
+
+.about-stack {
+    margin-top: 18px;
+}
+
+/* Không có “1 ô boder ôm tròn cả hàng”
+   -> Mỗi section tự là card riêng như trên HTML. */
+
+/* =========================
+   HERO CENTER
+   ========================= */
+
+.about-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-avatarWrap {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    margin: 10px auto 6px;
+    overflow: visible;
+}
+
+.about-avatar {
+    width: 190px;
+    height: 190px;
+    padding: 8px;
+}
+
+/* Crown ôm trọn avatar */
+.about-crown {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 265px;
+    max-width: none;
+    height: auto;
+    z-index: 50;
+    pointer-events: none;
+    filter: drop-shadow(0 10px 24px rgba(0, 0, 0, .45));
+}
+
+.about-name {
+    margin: 10px 0 6px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--panel) 70%, transparent);
+}
+
+.about-divider {
+    width: min(560px, 100%);
+    height: 1px;
+    margin: 14px 0 12px;
+    background: color-mix(in srgb, var(--border) 85%, transparent);
+}
+
+.about-caption {
+    width: min(620px, 100%);
+}
+
+.about-quote {
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: .2px;
+}
+
+.about-fun {
+    margin-top: 10px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--panel2) 70%, transparent);
+    line-height: 1.6;
+}
+
+.about-lines {
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+/* List + tags */
+.about-list {
+    width: 100%;
+    margin-top: 14px;
+    text-align: left;
+}
+
+.tagset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.about-tags {
+    margin-top: 12px;
+    justify-content: center;
+}
+
+.about-ctaRow {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* =========================
+   INFO – copy row
+   ========================= */
+.about-copyRow {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   PICTURE GALLERY
+   ========================= */
+
+.about-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.about-photo {
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    background: color-mix(in srgb, var(--panel2) 70%, transparent);
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .25);
+    transition: transform .18s ease, background .18s ease;
+}
+
+.about-photo:hover {
+    transform: translateY(-2px);
+    background: color-mix(in srgb, var(--panel2) 85%, transparent);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.about-gallery-note {
+    margin-top: 12px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 860px) {
+    .about-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .about-photo img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-avatarWrap {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-avatar {
+        width: 150px;
+        height: 150px;
+        padding: 6px;
+    }
+
+    .about-crown {
+        width: 210px;
+    }
+}
